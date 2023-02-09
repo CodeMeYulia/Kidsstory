@@ -1,0 +1,17 @@
+.wrapper{
+    padding: 3vw;
+}
+.header{
+    min-height: 5vh;
+    border: 1px dashed darkkhaki;
+margin-bottom: 1vh;
+}
+.banner-top{
+    background-color: #FDDC4E;
+    border-radius: 1vh;
+    min-height: 25vh;
+    
+}
+.navbar{
+    border: 1px dashed red;
+}
