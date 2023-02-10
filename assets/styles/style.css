@@ -3,15 +3,91 @@
 }
 .header{
     min-height: 5vh;
-    border: 1px dashed darkkhaki;
-margin-bottom: 1vh;
+    /* border: 1px dashed darkkhaki; */
+    margin-bottom: 1vh;
+}
+
+.navbar{
+    /* border: 1px dashed red; */
+    padding: 0px 1vw 0px 1vw;
+    grid-area: navbar;
+}
+.header-address{
+    float: right;
+    color: red;
+
+}
+.header-address__metrostation{
+    color: cornflowerblue;
+}
+.header-container {
+    padding: 0 3vw 0 3vw;
+    display: grid;
+}
+
+.header-address {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    min-height: 20px;
+    /* border: 1px dashed blueviolet; */
+    text-align: center;
+    column-gap: 20px;
+    padding-right: 20px;
+}
+
+.header-panel {
+    /* border: 1px dashed green; */
+    display: grid;
+    grid-template-columns: auto 2fr 1.2fr 0.7fr;
+    gap: 5px 5px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "logo-nav navbar header__contacts button-header";
+}
+
+.logo-nav {
+    grid-area: logo-nav;
+    width: 8vw;
+}
+
+.icon_phone {
+    grid-area: icon_phone;
+}
+
+.vk {
+    grid-area: vk;
+}
+
+.tg {
+    grid-area: tg;
+}
+
+.call {
+    grid-area: call;
+}
+
+.header__contacts {
+    grid-area: header__contacts;
+    display: grid;
+    grid-template-columns: 10px 1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+        "icon_phone navbar vk tg"
+        "call call call call";
+    justify-items: start;
+    align-content: center;
+    font-size: 0.8rem;
+    column-gap: 1vw;
+}
+
+.button-header {
+    grid-area: button-header;
 }
 .banner-top{
     background-color: #FDDC4E;
     border-radius: 1vh;
     min-height: 25vh;
     
-}
-.navbar{
-    border: 1px dashed red;
 }
