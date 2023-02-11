@@ -1,17 +1,24 @@
-.wrapper{
-    padding: 3vw;
+.wrapper {
+  padding: 3vw;
 }
-.header{
-    min-height: 5vh;
-    border: 1px dashed darkkhaki;
-margin-bottom: 1vh;
+.header {
+  min-height: 5vh;
+  border: 1px dashed darkkhaki;
+  margin-bottom: 1vh;
 }
-.banner-top{
-    background-color: #FDDC4E;
-    border-radius: 1vh;
-    min-height: 25vh;
-    
+.banner-top {
+  background-color: #fddc4e;
+  border-radius: 1vh;
+  min-height: 25vh;
 }
-.navbar{
-    border: 1px dashed red;
+.navbar {
+  border: 1px dashed red;
 }
+/* Sardana блок ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ начало */
+.form {
+  background-color: #8081bd;
+}
+.form__content {
+  background-color: #8081bd;
+}
+/* Sardana блок ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ конец */
