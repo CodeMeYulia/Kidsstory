@@ -1,13 +1,16 @@
 .aside-time {
+    min-width: 70vw;
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 76px);
+    gap: 1em;
 }
 
 .aside-time__item {
     border: 1px solid red;
     display: flex;
+    
 }
 
 .aside-time__box {
@@ -32,4 +35,13 @@
 
 .aside-time__img {
     align-self:center;
+}
+
+.aside-time__text {
+    align-self: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    vertical-align: middle;
 }
