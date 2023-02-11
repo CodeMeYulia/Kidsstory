@@ -17,9 +17,33 @@
 /* Sardana блок ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ начало */
 .form {
   background-color: #8081bd;
+  display: grid;
+  border-radius: 20px;
+  height: 35vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
 }
 .form__content {
-  background-color: #8081bd;
+  border: 1px solid blue;
+  width: 35vw;
+  display: grid;
+  align-content: center;
+  color: #ffffff;
+}
+.form-text1 {
+}
+
+.form__image {
+  border: 1px solid red;
+  width: 35vw;
+}
+.form_img1 {
+  height: auto;
+  width: auto;
+  min-width: 35vw;
 }
 /* Sardana блок ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ конец */
 .wrapper {
