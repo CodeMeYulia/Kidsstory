@@ -1,15 +1,23 @@
+.aside-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .aside-time {
-    min-width: 70vw;
-    border: 1px solid black;
+    width: 74vw;
+    /*border: 1px solid black;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 76px);
-    gap: 1em;
+    gap: 0.938em;
+    margin-top: 6.375em;
+    margin-bottom: 3.313em;
 }
 
 .aside-time__item {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
+    min-height: 76px;
     
 }
 
@@ -19,6 +27,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    margin-right: 1.25em;
 }
 
 .yellow {
@@ -39,9 +48,11 @@
 
 .aside-time__text {
     align-self: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    vertical-align: middle;
+    font-size: 14px;
+    font-size: 0.875em; /*туть надо что-то поковырять со шрифтами, чтобы часть текста выделялось жирненьким*/
+    color: #334155;
 }
+
