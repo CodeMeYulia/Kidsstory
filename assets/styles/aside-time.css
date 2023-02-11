@@ -1,3 +1,35 @@
 .aside-time {
     border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.aside-time__item {
+    border: 1px solid red;
+    display: flex;
+}
+
+.aside-time__box {
+    min-width: 76px;
+    max-height: 76px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    background: #F6B31F;
+}
+
+.blue {
+    background: #8081BD;
+}
+
+.pink {
+    background: #F3ACC8;
+}
+
+.aside-time__img {
+    align-self:center;
 }
