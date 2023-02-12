@@ -227,3 +227,43 @@
 .input-yes {
   color: #ffffff;
 }
+/*Айгуль видеогалерея начало */
+.videogalery_name{
+width: 599px;
+height: 49px;
+left: 251px;
+top: 2202px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+display: flex;
+align-items: center;
+color: #8081BD;
+}
+.videogalery_paragraph{
+    width: 1001px;
+height: 24px;
+left: 251px;
+top: 2275px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #334155;
+
+}
+
+
+
+
+
+
+
+
+
+
