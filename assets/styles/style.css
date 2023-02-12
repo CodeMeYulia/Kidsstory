@@ -221,8 +221,7 @@
 .name{
 width: 599px;
 height: 49px;
-left: 251px;
-top: 2202px;
+margin-top: 90px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -235,14 +234,71 @@ color: #8081BD;
 .paragraph{
     width: 1001px;
 height: 24px;
-left: 251px;
-top: 2275px;
+margin-bottom: 50px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
 color: #334155;
+}
+.video_card{
+    position: absolute;
+    left: 220px;
+    width: 600px;
+    border-radius: 35px;
+}
+.image_2{
+    margin-right: 0px;
+}
+.pagination {
+    width:100%;
+    text-align:center;
+    padding: 10px;
+    margin:60px auto;
+   
+}
+.pagination ul{
+    width:100%;
+    padding:0px;
+    margin-top:20px;
+}
+.pagination ul li {
+    display:inline-block;
+    list-style:none;
+    margin:5px 5px;
+    font-size:4px;
+    text-align:center;
+}
+.pagination ul li a, .pagination ul li a:visited {
+    display:block;
+    text-decoration:none;
+    color: yellow;
+    background: url(bgnav.png) repeat-x scroll 0 0 yellow;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    /* -webkit-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+    -moz-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+    -ms-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+    box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd; */
+    height: 18px;
+    width: 18px;
+    line-height: 26px;
+    top: -1px;
+    text-shadow: 1px 1px #fff;
+}
+.pagination ul li a:hover {
+    display:block;
+    background: url(bgnav.png) repeat-x scroll 0 -24px red;
+    text-decoration:none;
+}
+.pagination ul li a:active {
+    box-shadow: none;
+    position: relative;
+    top: 1px;
 }
 
 
