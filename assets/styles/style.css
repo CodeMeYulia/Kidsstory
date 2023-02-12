@@ -1,18 +1,33 @@
 .wrapper{
     padding: 0.7vh 3vw;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
+/* Yulia Header начало */
+.header, 
+.header-container, 
+.header-address, 
+.header-panel, 
+.logo-nav, 
+.navbar, 
+.header__tel, 
+.header__contacts, 
+.vk, 
+.tg {
+    /* border: 1px dashed darkkhaki; */
+}
+
 .header{
     min-height: 5vh;
-    /* border: 1px dashed darkkhaki; */
-    padding: 5px 20px;
+    padding: 0.5vw 1vw;
     margin-bottom: 1vh;
 }
 .header-container{
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-areas: auto 1fr / 0.5fr 1.5fr auto 1fr;
     align-content: center;
-    /* border: 1px dashed darkkhaki; */
-    /* background-color: aquamarine; */
+    padding: 0vh 6vw;
 }
 .header-address {
     display: grid;
@@ -20,45 +35,35 @@
     column-gap: 2vw;
     justify-content: end;
     min-height: 3vh;
-    padding-right: 2vw;
-    color: red;
-    font-size: 0.7em;
+    color: #EA5D4A;
+    font-size: 0.7rem;
     align-content: center;
-    /* border: 1px dashed blueviolet; */
-
 }
 .header-address__metrostation{
     color: cornflowerblue;
 }
 .header-panel {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr auto 0.5fr;
     justify-content: space-around;
     align-items: center;
     grid-template-areas:
         "logo-nav navbar header__contacts button-header";
-    /* border: 1px dashed green; */
-
 }
 
 .logo-nav {
     grid-area: logo-nav;
     width: 8vw;
     margin: 0px auto;
-    /* border: 1px dashed darkkhaki; */
-
 }
 .navbar{
     display: flex;
     padding: 0px 1vw 0px 1vw;
     grid-area: navbar;
     justify-content: center;
-    /* border: 1px dashed red; */
-
 }
 .navbar-link{
-    padding: 0vh 0.5vw;
-    font-size: 1vw;
+    padding: 0vh 0.4vw;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #334155;
 }
@@ -69,29 +74,25 @@
 .header__tel{
     padding: 0vh 1vw 0vh 1vw;
     font-weight: 600;
-    /* border: 1px dashed rgb(66, 28, 138); */
 }
 .header__contacts {
-    /* border: 1px dashed rgb(66, 28, 138); */
     grid-area: header__contacts;
     display: grid;
     grid-template-columns: 1vw auto 0.2fr 0.2fr;
     grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas:
         "icon_phone header__tel vk tg"
-        "call call . .";
+        "call call call call";
     justify-items: start;
     align-content: center;
     font-size: 0.8rem;
 }
 .vk {
-    /* border: 1px dashed rgb(66, 28, 138); */
     grid-area: vk;
     padding: 0vh 0.5vw;
 }
 
 .tg {
-    /* border: 1px dashed rgb(66, 28, 138); */
     grid-area: tg;
     padding: 0vh 0.5vw;
 }
@@ -99,8 +100,8 @@
 .call {
     grid-area: call;
     padding: 0vh 1vw;
-    color: red;
-    font-size: 0.7em;
+    color: #EA5D4A;
+    font-size: 0.7rem;
 }
 
 .button-header {
@@ -109,79 +110,110 @@
     flex-wrap: nowrap;
     grid-area: button-header;
     background-color: #8081bd;
-    padding: 0.5vw 0.6vw;
+    padding: 0.5vw 0.7vw;
     border-radius: 1.3vw;
     color: #ffffff;
     border-style: none;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     justify-content: center;
     margin: 2px auto;
 }
+
+
+
+/* Yulia Header конец */
+
+
+
 .container__banner-top{
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr 25%;
+    grid-template-areas: "text__banner-top img-banner-top .";
     background-color: #FDDC4E;
     border-radius: 1vh;
     height: 45vh;
-    /* position: relative;
+    position: relative;
     top: 0;
-    left: 0; */
+    left: 0;
 }
+
+.text__banner-top{
+    /* border: 1px dashed red; */
+    grid-area: text__banner-top;
+    display: grid;
+    align-content: center;
+    padding: 0px 1vw 0px 10vw;
+    justify-content: start;
+}
+.h1__banner-top{
+    /* border: 1px dashed blue; */
+    color: #334155;
+    font-size: 6vw;
+    line-height: 0vw;
+}
+.h2__banner-top{
+    /* border: 1px dashed green; */
+    color: #334155;
+    font-size: 1.6rem;
+    line-height: 2vw;
+}
+.img-banner-top{
+    /* border: 1px dashed rgb(185, 10, 177); */
+    grid-area: img-banner-top;
+    display: flex;
+    height: 45vh;
+}
+.img-banner-top img{
+    height: 45vh;
+}
+
 .book-form__banner-top{
+    /* border: 1px dashed rgb(66, 28, 138); */
     background-color: #8081bd;
     height: 45vh;
     width: 20vw;
     border-radius: 1vh;
     float: right;
-    /* position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
-    z-index: 100; */
+    z-index: 100;
 }
-.text__banner-top{
-    border: 1px dashed red;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 0px 10vw;
-    max-width: 30%;
-    justify-content: center;
+.form-container{
+    display: grid;
+    /* border: 1px dashed #d86e0c; */
+    margin: 0.2vw 2vw;
+    
 }
-.h1__banner-top{
-    border: 1px dashed blue;
-    color: #334155;
-    font-size: 6vw;
-}
-.h2__banner-top{
-    border: 1px dashed green;
-    color: #334155;
-    font-size: 2em;
-}
-.img-banner-top{
-    display: flex;
-    height: 45vh;
-    justify-content: start;
-}
-.img-banner-top img{
-    /* width: 100%; */
-    height: 45vh;
 
-}
 .h2-form{
     color: #ffffff;
-    padding: 1vw;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin: 1.5vw 0vw;
 }
-.h5-form{
+.p-form{
     color: #ffffff;
-    padding: 1vw;
+    /* padding: 0.1vw 1vw; */
+    font-size: 0.6rem;
+    margin-bottom: 0.5vw;
 }
 .input{
+    display: flex;
     border-style: none;
-    padding: 8px 15px;
+    padding: 0.5rem 1.2rem;
     border-radius: 1vw;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
+    margin: 0.5vh;
+    font-size: 0.8rem;
 }
 .input-yes{
     color: #ffffff;
+    font-size: 0.8rem;
+}
+.input-book{
+    background-color: #EA5D4A;
+    color: #ffffff;
+    justify-content: center;
+
 }

@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/normalize.css" type="text/css" />
     <link rel="stylesheet" href="/assets/styles/style.css" type="text/css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <title>Kidsstory</title>
     <style>
-
+        :root {}
     </style>
 </head>
 
@@ -63,16 +66,17 @@
                     <img src="./assets/images/kids.png" alt="kids">
                 </div>
                 <for class="book-form__banner-top">
-                    <form action="book">
-                        <h2 class="h2-form">Запишитесь на персональную экскурсию</h2>
-                        <h5 class="h5-form">Заполните форму и посмотрите детский сад вживую в удобное для вас время</h5>
+                    <form action="book" class="form-container">
+                        <div class="h2-form">Запишитесь <br> на персональную экскурсию</div>
+                        <div class="p-form">Заполните форму и посмотрите детский сад вживую в удобное для вас время
+                        </div>
                         <input class="input input-name" type="text" name="name" id="name" value="Ваше имя" />
                         <input class="input input-tel" type="tel" name="tel" value="+7 ---*---*----">
                         <input class="input input-e-mail" type="email" name="login" value="Ваш e-mail">
                         <p class="input input-yes"><input name="uslovia" type="radio" value="yes">Я принимаю условия
                             <br> пользовательского
                             соглашения</p>
-                        <p><input class="input input-book" type="button" value=" Записаться "></p>
+                        <input class="input input-book" type="button" name="book" value=" ЗАПИСАТЬСЯ ">
                     </form>
 
                 </for>
