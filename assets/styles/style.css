@@ -39,8 +39,8 @@
     font-size: 0.7rem;
     align-content: center;
 }
-.header-address__metrostation{
-    color: cornflowerblue;
+.header-address__metrostation {
+  color: cornflowerblue;
 }
 .header-panel {
     display: grid;
@@ -53,7 +53,7 @@
 .logo-nav {
     grid-area: logo-nav;
     width: 8vw;
-    margin: 0px auto;
+    margin: 0vw auto;
 }
 .navbar{
     display: flex;
@@ -68,8 +68,8 @@
     color: #334155;
 }
 .icon_phone {
-    grid-area: icon_phone;
-    padding: 0vh 1vw;
+  grid-area: icon_phone;
+  padding: 0vh 1vw;
 }
 .header__tel{
     padding: 0vh 1vw 0vh 1vw;

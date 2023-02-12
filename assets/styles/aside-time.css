@@ -1,0 +1,57 @@
+.aside-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.aside-time {
+    width: 74vw;
+    /*border: 1px solid black;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 76px);
+    gap: 0.938em;
+    margin-top: 6.375em;
+    margin-bottom: 3.313em;
+}
+
+.aside-time__item {
+    /*border: 1px solid red;*/
+    display: flex;
+    min-height: 76px;
+    
+}
+
+.aside-time__box {
+    min-width: 76px;
+    max-height: 76px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 1.25em;
+}
+
+.yellow {
+    background: #F6B31F;
+}
+
+.blue {
+    background: #8081BD;
+}
+
+.pink {
+    background: #F3ACC8;
+}
+
+.aside-time__img {
+    align-self:center;
+}
+
+.aside-time__text {
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875em; /*туть надо что-то поковырять со шрифтами, чтобы часть текста выделялось жирненьким*/
+    color: #334155;
+}
