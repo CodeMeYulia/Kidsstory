@@ -180,8 +180,7 @@
     display: grid;
     /* border: 1px dashed #d86e0c; */
     margin: 0.2vw 2vw;
-    
-}
+    }
 
 .h2-form{
     color: #ffffff;
@@ -212,9 +211,30 @@
     background-color: #EA5D4A;
     color: #ffffff;
     justify-content: center;
-
 }
-/*Айгуль видеогалерея начало */
+
+
+
+
+
+/* Aygul блок с текстом article */
+.article-about__p-selection{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+    color: red;
+}
+.article-about__paragraph{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: color: #334155;;  
+}
+
 
 
 
