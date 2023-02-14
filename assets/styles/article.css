@@ -1,0 +1,20 @@
+/* Aygul блок с текстом article */
+.article-about__p-selection{
+font-family: 'Montserrat';
+ margin-bottom: 45px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #EA5D4A;
+}
+.article-about__paragraph{
+   font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+margin-top: 5px;
+color: #334155;
+}
