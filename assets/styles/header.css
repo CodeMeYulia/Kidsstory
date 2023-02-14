@@ -1,0 +1,206 @@
+.header, 
+.header-container, 
+.header-address, 
+.header-panel, 
+.logo-nav, 
+.navbar, 
+.header__tel, 
+.header__contacts, 
+.vk, 
+.tg {
+    /* border: 1px dashed darkkhaki; */
+}
+
+.header{
+    min-height: 5vh;
+    padding: 0.5vw 1vw;
+    margin-bottom: 1vh;
+}
+.header-container{
+    display: grid;
+    grid-template-areas: auto 1fr / 0.5fr 1.5fr auto 1fr;
+    align-content: center;
+    padding: 0vh 6vw;
+}
+.header-address {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2vw;
+    justify-content: end;
+    min-height: 3vh;
+    color: #EA5D4A;
+    font-size: 0.7rem;
+    align-content: center;
+}
+.header-address__metrostation {
+  color: cornflowerblue;
+}
+.header-panel {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-areas:
+        "logo-nav navbar header__contacts button-header";
+}
+
+.logo-nav {
+    grid-area: logo-nav;
+    width: 8vw;
+    margin: 0vw auto;
+}
+.navbar{
+    display: flex;
+    padding: 0px 1vw 0px 1vw;
+    grid-area: navbar;
+    justify-content: center;
+}
+.navbar-link{
+    padding: 0vh 0.4vw;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #334155;
+}
+.icon_phone {
+  grid-area: icon_phone;
+  padding: 0vh 1vw;
+}
+.header__tel{
+    padding: 0vh 1vw 0vh 1vw;
+    font-weight: 600;
+}
+.header__contacts {
+    grid-area: header__contacts;
+    display: grid;
+    grid-template-columns: 1vw auto 0.2fr 0.2fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+        "icon_phone header__tel vk tg"
+        "call call call call";
+    justify-items: start;
+    align-content: center;
+    font-size: 0.8rem;
+}
+.vk {
+    grid-area: vk;
+    padding: 0vh 0.5vw;
+}
+
+.tg {
+    grid-area: tg;
+    padding: 0vh 0.5vw;
+}
+
+.call {
+    grid-area: call;
+    padding: 0vh 1vw;
+    color: #EA5D4A;
+    font-size: 0.7rem;
+}
+
+.button-header {
+    max-width: 12vw;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-area: button-header;
+    background-color: #8081bd;
+    padding: 0.5vw 0.7vw;
+    border-radius: 1.3vw;
+    color: #ffffff;
+    border-style: none;
+    font-size: 0.7rem;
+    justify-content: center;
+    margin: 2px auto;
+}
+
+.burger{
+    display: none;
+}
+
+
+@media (max-width: 770px) {
+    .header-address,
+    .header-address__metrostation,
+    .navbar, 
+    .navbar-link, 
+    .icon_phone, 
+    .header__tel,
+    .call {
+        display: none;
+    }
+    
+    .header,
+    .header-container,
+    .header-panel, 
+    .logo-nav,
+    .vk,
+    .tg
+    {
+        /* border: 1px dashed rgb(255, 51, 0); */
+    }
+
+    .header{
+        padding: 0vw;
+        margin-bottom: 0vh;
+    }
+
+    .header-container{
+        display: grid;
+        align-content: center;
+        padding: 0;
+        justify-content: center;
+    }
+    
+    
+    .header-panel {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo-nav header__contacts header__contacts burger"
+        "button-header button-header button-header button-header";
+        grid-area: none;
+        justify-items: end;
+    }
+    
+    .logo-nav {
+        grid-area: logo-nav;
+        width: 30vw;
+    }
+    
+    .header__contacts{
+        grid-area: header__contacts;
+    }
+
+    .vk {
+        grid-area: vk;
+        /* padding: 0vh 0.5vw; */
+        margin-right: 5vw;
+    }
+    
+    .tg {
+        grid-area: tg;
+        /* padding: 0vh 0.5vw; */
+    }
+    
+    
+    .burger{
+        border: 1px dashed green;
+        width: 28px;
+        height: 14px;
+        grid-area: burger;
+        padding-left: 0.5vw;
+    }
+
+    .button-header {
+        max-width: 100%;
+        display: flex;
+        grid-area: button-header;
+        background-color: #e21811;
+        padding: 2vw 20vw;
+        border-radius: 5vw;
+        color: #ffffff;
+        border-style: none;
+        font-size: 0.7rem;
+        justify-content: stretch;
+        margin: 2px auto;
+    }
