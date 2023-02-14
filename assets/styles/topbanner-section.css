@@ -1,8 +1,8 @@
 .container__banner-top{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 25%;
-    grid-template-areas: "text__banner-top img-banner-top .";
-    background-color: #FDDC4E;
+    grid-template-areas: "text__banner-top img-banner-top ."; */
+    /* background-color: #FDDC4E; */
     border-radius: 1vh;
     height: 45vh;
     position: relative;
@@ -10,13 +10,17 @@
     left: 0;
 }
 
+.top-banner__main{
+    background-image: url(../images/kids.png), url(../images/Rectangle_BackYellow.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center center, center;
+    background-color: #FDDC4E;
+    height: 43vh;
+}
 .text__banner-top{
     /* border: 1px dashed red; */
-    grid-area: text__banner-top;
-    display: grid;
+    padding: 3vw 5vw;
     align-content: center;
-    padding: 0px 1vw 0px 10vw;
-    justify-content: start;
 }
 .h1__banner-top{
     /* border: 1px dashed blue; */
@@ -30,20 +34,12 @@
     font-size: 1.6rem;
     line-height: 2vw;
 }
-.img-banner-top{
-    /* border: 1px dashed rgb(185, 10, 177); */
-    grid-area: img-banner-top;
-    display: flex;
-    height: 45vh;
-}
-.img-banner-top img{
-    height: 45vh;
-}
+
 
 .book-form__banner-top{
     /* border: 1px dashed rgb(66, 28, 138); */
     background-color: #8081bd;
-    height: 45vh;
+    height: 43vh;
     width: 20vw;
     border-radius: 1vh;
     float: right;
