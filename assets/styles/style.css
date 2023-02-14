@@ -119,11 +119,13 @@
     margin: 2px auto;
 }
 
-
+.burger{
+    display: none;
+}
 
 /* Yulia Header конец */
 
-
+/* Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ начало */
 
 .container__banner-top{
     display: grid;
@@ -217,6 +219,10 @@
     justify-content: center;
 
 }
+
+
+/* Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ конец */
+
 /*Айгуль видеогалерея начало */
 .name{
 width: 599px;
@@ -301,12 +307,191 @@ color: #334155;
     top: 1px;
 }
 
+/*Айгуль  конец */
 
 
 
+/* Медиазапросы */
 
+@media (max-width: 770px) {
+    .header-address,
+    .header-address__metrostation,
+    .navbar, 
+    .navbar-link, 
+    .icon_phone, 
+    .header__tel,
+    .call {
+        display: none;
+    }
+    
+    .header,
+    .header-container,
+    .header-panel, 
+    .logo-nav,
+    .vk,
+    .tg
+    {
+        /* border: 1px dashed rgb(255, 51, 0); */
+    }
 
+    .header{
+        padding: 0vw;
+        margin-bottom: 0vh;
+    }
 
+    .header-container{
+        display: grid;
+        align-content: center;
+        padding: 0;
+        justify-content: center;
+    }
+    
+    
+    .header-panel {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo-nav header__contacts header__contacts burger"
+        "button-header button-header button-header button-header";
+        grid-area: none;
+        justify-items: end;
+    }
+    
+    .logo-nav {
+        grid-area: logo-nav;
+        width: 30vw;
+    }
+    
+    .header__contacts{
+        grid-area: header__contacts;
+    }
 
+    .vk {
+        grid-area: vk;
+        /* padding: 0vh 0.5vw; */
+        margin-right: 5vw;
+    }
+    
+    .tg {
+        grid-area: tg;
+        /* padding: 0vh 0.5vw; */
+    }
+    
+    
+    .burger{
+        border: 1px dashed green;
+        width: 28px;
+        height: 14px;
+        grid-area: burger;
+        padding-left: 0.5vw;
+    }
 
+    .button-header {
+        max-width: 100%;
+        display: flex;
+        grid-area: button-header;
+        background-color: #e21811;
+        padding: 2vw 20vw;
+        border-radius: 5vw;
+        color: #ffffff;
+        border-style: none;
+        font-size: 0.7rem;
+        justify-content: stretch;
+        margin: 2px auto;
+    }
+
+/* верхний баннер */
+
+.container__banner-top{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #FDDC4E;
+    border-radius: 1vh;
+    max-width: 100%;
+    height: 45vh;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+
+.text__banner-top{
+    /* border: 1px dashed red; */
+    width: 100%;
+    grid-area: text__banner-top;
+    display: grid;
+    align-content: center;
+    padding: 0px 1vw 0px 10vw;
+    justify-content: center;
+}
+.h1__banner-top{
+    /* border: 1px dashed blue; */
+    color: #334155;
+    font-size: 6vw;
+    line-height: 0vw;
+}
+.h2__banner-top{
+    /* border: 1px dashed green; */
+    color: #334155;
+    font-size: 1.6rem;
+    line-height: 2vw;
+}
+.img-banner-top{
+    /* border: 1px dashed rgb(185, 10, 177); */
+    grid-area: img-banner-top;
+    display: flex;
+    height: 45vh;
+}
+.img-banner-top img{
+    height: 45vh;
+}
+
+.book-form__banner-top{
+    /* border: 1px dashed rgb(66, 28, 138); */
+    background-color: #8081bd;
+    height: 45vh;
+    width: 20vw;
+    border-radius: 1vh;
+    
+}
+.form-container{
+    display: grid;
+    margin: 0.2vw 2vw;
+    
+}
+
+.h2-form{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin: 1.5vw 0vw;
+}
+.p-form{
+    color: #ffffff;
+    /* padding: 0.1vw 1vw; */
+    font-size: 0.6rem;
+    margin-bottom: 0.5vw;
+}
+.input{
+    display: flex;
+    border-style: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1vw;
+    margin: 0.5vh;
+    font-size: 0.8rem;
+}
+.input-yes{
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+.input-book{
+    background-color: #EA5D4A;
+    color: #ffffff;
+    justify-content: center;
+
+}
+
+}
 

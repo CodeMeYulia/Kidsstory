@@ -35,7 +35,7 @@
                 </div>
                 <div class="header-panel">
                     <img class="logo-nav" src="./assets/images/logo.png" alt="logotype">
-                    <nav class="navbar">
+                    <nav class="navbar role=" navigation">
                         <a href="#" class="navbar-link">О нас</a>
                         <a href="#" class="navbar-link">Расписание</a>
                         <a href="#" class="navbar-link">Программа</a>
@@ -50,6 +50,7 @@
                         <img class="tg" src="./assets/images//Header_tg.png" alt="tg">
                         <div class="call">Заказать обратный звонок</div>
                     </div>
+                    <img class="burger" src="./assets/images/burger-menu-rounded-24.png" alt="g-menu">
                     <button class="button-header">
                         Записаться на экскурсию
                     </button>
@@ -61,205 +62,198 @@
 
         <main class="main">
             <!-- Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ начало -->
-            <div class="banner-top"></div>
+            <div class="container__banner-top">
+                <div class="text__banner-top">
+                    <h1 class="h1__banner-top">Kidsstory</h1>
+                    <h2 class="h2__banner-top">Английский детский сад и клуб</h2>
+                </div>
+                <div class="img-banner-top">
+                    <img src="./assets/images/kids.png" alt="kids">
+                </div>
+                <for class="book-form__banner-top">
+                    <form action="book" class="form-container">
+                        <div class="h2-form">Запишитесь <br> на персональную экскурсию</div>
+                        <div class="p-form">Заполните форму и посмотрите детский сад вживую в удобное для вас время
+                        </div>
+                        <input class="input input-name" type="text" name="name" id="name" value="Ваше имя" />
+                        <input class="input input-tel" type="tel" name="tel" value="+7 ___-___-__-__">
+                        <input class="input input-e-mail" type="email" name="login" value="Ваш e-mail">
+                        <p class="input input-yes"><input name="uslovia" type="radio" value="yes">Я принимаю условия
+                            <br> пользовательского
+                            соглашения</p>
+                        <input class="input input-book" type="button" name="book" value=" ЗАПИСАТЬСЯ ">
+                    </form>
+
+                </for>
+            </div>
+
             <!-- Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ конец -->
-            <main class="main">
 
-                <!-- Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ начало -->
-                <div class="container__banner-top">
-                    <div class="text__banner-top">
-                        <h1 class="h1__banner-top">Kidsstory</h1>
-                        <h2 class="h2__banner-top">Английский детский сад и клуб</h2>
+
+
+            <!-- Nadezhda блок ИКОНКИ (ЧАСЫ РАБОТЫ - ПИТАНИЕ) начало -->
+            <div class="aside-wrapper">
+                <aside class="aside-time">
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box yellow">
+                            <img src="/assets/images/aside-time__time.svg" alt="Часы работы" class="aside-time__img">
+                        </div>
+                        <p class="aside-time__text">
+                            <b> Часы работы:</b> c 7:00 до 19:00
+                            <!--туть надо часть текста сделать жирным-->
+                        </p>
                     </div>
-                    <div class="img-banner-top">
-                        <img src="./assets/images/kids.png" alt="kids">
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box pink">
+                            <img src="/assets/images/aside-time__group.svg" alt="Число детей в группах"
+                                class="aside-time__img" />
+                        </div>
+                        <p class="aside-time__text">
+                            Группы: до 15 человек
+                        </p>
                     </div>
-                    <for class="book-form__banner-top">
-                        <form action="book" class="form-container">
-                            <div class="h2-form">Запишитесь <br> на персональную экскурсию</div>
-                            <div class="p-form">Заполните форму и посмотрите детский сад вживую в удобное для вас время
-                            </div>
-                            <input class="input input-name" type="text" name="name" id="name" value="Ваше имя" />
-                            <input class="input input-tel" type="tel" name="tel" value="+7 ___-___-__-__">
-                            <input class="input input-e-mail" type="email" name="login" value="Ваш e-mail">
-                            <p class="input input-yes"><input name="uslovia" type="radio" value="yes">Я принимаю условия
-                                <br> пользовательского
-                                соглашения</p>
-                            <input class="input input-book" type="button" name="book" value=" ЗАПИСАТЬСЯ ">
-                        </form>
 
-                    </for>
-                </div>
-
-                <!-- Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ конец -->
-
-
-
-                <!-- Nadezhda блок ИКОНКИ (ЧАСЫ РАБОТЫ - ПИТАНИЕ) начало -->
-                <div class="aside-wrapper">
-                    <aside class="aside-time">
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box yellow">
-                                <img src="/assets/images/aside-time__time.svg" alt="Часы работы"
-                                    class="aside-time__img">
-                            </div>
-                            <p class="aside-time__text">
-                                <b> Часы работы:</b> c 7:00 до 19:00
-                                <!--туть надо часть текста сделать жирным-->
-                            </p>
+                    <div class="aside-time__item">
+                        <div class="aside-time__box blue">
+                            <img src="/assets/images/aside-time__place.svg" alt="Площадь для прогулок"
+                                class="aside-time__img" />
                         </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box pink">
-                                <img src="/assets/images/aside-time__group.svg" alt="Число детей в группах"
-                                    class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Группы: до 15 человек
-                            </p>
-                        </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box blue">
-                                <img src="/assets/images/aside-time__place.svg" alt="Площадь для прогулок"
-                                    class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Площадь для прогулок: собственная оборудованная территория для прогулок
-                            </p>
-                        </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box blue">
-                                <img src="/assets/images/aside-time__video.svg" alt="Видеонаблюдение"
-                                    class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Видеонаблюдение: онлайн
-                            </p>
-                        </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box yellow">
-                                <img src="/assets/images/aside-time__english.svg" alt="Англоязычная среда"
-                                    class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Англоязычная среда: билингвал / экспат
-                            </p>
-                        </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box pink">
-                                <img src="/assets/images/aside-time__age.svg" alt="Возраст детей"
-                                    class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Возраст детей: c 1,5 до 7 лет
-                            </p>
-                        </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box pink">
-                                <img src="/assets/images/aside-time__medicine.svg" alt="Утренний фильтр медработником"
-                                    class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Утренний фильтр медработником: ежедневно
-                            </p>
-                        </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box blue">
-                                <img src="/assets/images/aside-time__space.svg" alt="Помещение"
-                                    class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Помещение: 800 кв.м
-                            </p>
-                        </div>
-
-                        <div class="aside-time__item">
-                            <div class="aside-time__box yellow">
-                                <img src="/assets/images/aside-time__food.svg" alt="Питание" class="aside-time__img" />
-                            </div>
-                            <p class="aside-time__text">
-                                Питание: 5-разовое, С учетом индивидуальных особенностей ребенка
-                            </p>
-                        </div>
-
-                    </aside>
-                </div>
-                <!-- Nadezhda блок ИКОНКИ (ЧАСЫ РАБОТЫ - ПИТАНИЕ) конец -->
-
-                <!-- Sardana блок ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ начало -->
-                <div class="form">
-                    <div class="form__content">
-                        <h2 class="form-text1">Есть вопросы? Получите бесплатную консультацию</h2>
-                        <h5 class="form-text2">
-                            Оставьте телефон и мы перезвоним и расскажем все подробности о
-                            филиале
-                        </h5>
-                        <div class="input-box">
-                            <input type="tel" name="phone" id="phone" value="+7___-___-__-__" minlength="12"
-                                maxlength="15" required />
-                            <input type="radio" id="accept" />
-                            <label for="accept">Я принимаю условия пользовательского соглашения</label>
-                        </div>
-                        <div class="form__button">
-                            <input type="submit" />
-                        </div>
+                        <p class="aside-time__text">
+                            Площадь для прогулок: собственная оборудованная территория для прогулок
+                        </p>
                     </div>
-                    <div class="form__image">
-                        <img src="assets/images/boy_form_image1.png" alt="image of a boy" class="form_img1" />
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box blue">
+                            <img src="/assets/images/aside-time__video.svg" alt="Видеонаблюдение"
+                                class="aside-time__img" />
+                        </div>
+                        <p class="aside-time__text">
+                            Видеонаблюдение: онлайн
+                        </p>
+                    </div>
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box yellow">
+                            <img src="/assets/images/aside-time__english.svg" alt="Англоязычная среда"
+                                class="aside-time__img" />
+                        </div>
+                        <p class="aside-time__text">
+                            Англоязычная среда: билингвал / экспат
+                        </p>
+                    </div>
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box pink">
+                            <img src="/assets/images/aside-time__age.svg" alt="Возраст детей" class="aside-time__img" />
+                        </div>
+                        <p class="aside-time__text">
+                            Возраст детей: c 1,5 до 7 лет
+                        </p>
+                    </div>
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box pink">
+                            <img src="/assets/images/aside-time__medicine.svg" alt="Утренний фильтр медработником"
+                                class="aside-time__img" />
+                        </div>
+                        <p class="aside-time__text">
+                            Утренний фильтр медработником: ежедневно
+                        </p>
+                    </div>
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box blue">
+                            <img src="/assets/images/aside-time__space.svg" alt="Помещение" class="aside-time__img" />
+                        </div>
+                        <p class="aside-time__text">
+                            Помещение: 800 кв.м
+                        </p>
+                    </div>
+
+                    <div class="aside-time__item">
+                        <div class="aside-time__box yellow">
+                            <img src="/assets/images/aside-time__food.svg" alt="Питание" class="aside-time__img" />
+                        </div>
+                        <p class="aside-time__text">
+                            Питание: 5-разовое, С учетом индивидуальных особенностей ребенка
+                        </p>
+                    </div>
+
+                </aside>
+            </div>
+            <!-- Nadezhda блок ИКОНКИ (ЧАСЫ РАБОТЫ - ПИТАНИЕ) конец -->
+
+            <!-- Sardana блок ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ начало -->
+            <div class="form">
+                <div class="form__content">
+                    <h2 class="form-text1">Есть вопросы? Получите бесплатную консультацию</h2>
+                    <h5 class="form-text2">
+                        Оставьте телефон и мы перезвоним и расскажем все подробности о
+                        филиале
+                    </h5>
+                    <div class="input-box">
+                        <input type="tel" name="phone" id="phone" value="+7___-___-__-__" minlength="12" maxlength="15"
+                            required />
+                        <input type="radio" id="accept" />
+                        <label for="accept">Я принимаю условия пользовательского соглашения</label>
+                    </div>
+                    <div class="form__button">
+                        <input type="submit" />
                     </div>
                 </div>
-                <!-- блок с формой -ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ конец -->
-
-                <!-- Nadezhda блок ДОПУСЛУГИ начало -->
-
-                <!-- Nadezhda блок ДОПУСЛУГИ конец -->
-
-      <!-- Aigul блок ВИДЕОГАЛЕРЕЯ начало -->
-      <div class="videogalery">
-        <h2 class="name">Видеогалерея нашего сада</h2>
-        <p class="paragraph">Вы можете ознакомиться как проходят наши будни</p>
-        <div class="videogalery__blok">
-           <a href="#"><img src="/assets/images/img_kids1.png" alt="фото с детьми на уроке" class="image_1"/></a>
-          <a href="#"><img src="/assets/images/img_kids2.png" alt="фото с детьми за столом" class="image_2"/></a>
-            <video src="/assets/video/Английский детский сад MAGIC CASTLE.mp4" controls muted poster="/assets/images/video_poster.png" class="video_card"></video>
-        </div>
-        <div class="pagination">
-            <ul>
-                <li><a href="#" title=""></a></li>
-                <li><a href="#" title=""></a></li>
-                <li><a href="#" title=""></a></li>
-                <li><a href="#" title=""></a></li>
-                <li><a href="#" title=""></a></li>
-                <li><a href="#" title=""></a></li>
-               </ul>
+                <div class="form__image">
+                    <img src="assets/images/boy_form_image1.png" alt="image of a boy" class="form_img1" />
                 </div>
-        
-    </div>
-   
-    
-                    <!-- Aigul блок ВИДЕОГАЛЕРЕЯ конец -->
-    
-    
+            </div>
+            <!-- блок с формой -ФОРМА ЗАПРОС НА КОНСУЛЬТАЦИЮ конец -->
+
+            <!-- Nadezhda блок ДОПУСЛУГИ начало -->
+
+            <!-- Nadezhda блок ДОПУСЛУГИ конец -->
+
+            <!-- Aigul блок ВИДЕОГАЛЕРЕЯ начало -->
+            <div class="videogalery">
+                <h2 class="name">Видеогалерея нашего сада</h2>
+                <p class="paragraph">Вы можете ознакомиться как проходят наши будни</p>
+                <div class="videogalery__blok">
+                    <a href="#"><img src="/assets/images/img_kids1.png" alt="фото с детьми на уроке"
+                            class="image_1" /></a>
+                    <a href="#"><img src="/assets/images/img_kids2.png" alt="фото с детьми за столом"
+                            class="image_2" /></a>
+                    <video src="/assets/video/Английский детский сад MAGIC CASTLE.mp4" controls muted
+                        poster="/assets/images/video_poster.png" class="video_card"></video>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- Aigul блок ВИДЕОГАЛЕРЕЯ конец -->
+
+
             <!-- Aigul блок ПРЕИМУЩЕСТВА начало -->
             <div class="advantages">
                 <h2 class="name">Преимущества</h2>
-            <p class="paragraph">Наша авторская программа ведётся на русском и английском языках и состоит из <br>увлекательных мероприятий</p>
+                <p class="paragraph">Наша авторская программа ведётся на русском и английском языках и состоит из
+                    <br>увлекательных мероприятий</p>
             </div>
             <!-- Aigul блок ПРЕИМУЩЕСТВА конец -->
-      </main>
-
-                
-          
+        </main>
 
 
-            <footer class="footer"></footer>
+        <footer class="footer"></footer>
     </div>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
