@@ -118,6 +118,7 @@
 
 
 @media (max-width: 770px) {
+
     .header-address,
     .header-address__metrostation,
     .navbar, 
@@ -204,3 +205,4 @@
         justify-content: stretch;
         margin: 2px auto;
     }
+}
