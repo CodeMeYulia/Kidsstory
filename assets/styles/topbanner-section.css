@@ -11,9 +11,9 @@
 }
 
 .top-banner__main{
-    background-image: url(../images/kids.png), url(../images/Rectangle_BackYellow.png);
-    background-repeat: no-repeat, repeat;
-    background-position: center center, center;
+    background-image: url(../images/kids.png), url(../images/Vector-downleft-topbanner.png), url(../images/Vector-downright-topbanner.png), url(../images/withe-circles.png) , url(../images/Rectangle_BackYellow.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: center center, left, center, left bottom, center;
     background-color: #FDDC4E;
     height: 43vh;
 }
