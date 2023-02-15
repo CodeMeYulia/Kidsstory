@@ -1,17 +1,15 @@
-.wrapper{
-    padding: 0.7vh 3vw;
-    font-family: 'Montserrat', sans-serif;
+.container__banner-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 25%;
+    grid-template-areas: "text__banner-top img-banner-top .";
+    background-color: #FDDC4E;
+    border-radius: 1vh;
+    height: 45vh;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-
-/* Yulia Header начало */
-
-/* Yulia Header конец */
-
-/* Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ начало */
-
-
-<<<<<<< HEAD
 .text__banner-top{
     /* border: 1px dashed red; */
     grid-area: text__banner-top;
@@ -58,7 +56,8 @@
     display: grid;
     /* border: 1px dashed #d86e0c; */
     margin: 0.2vw 2vw;
-    }
+    
+}
 
 .h2-form{
     color: #ffffff;
@@ -89,88 +88,25 @@
     background-color: #EA5D4A;
     color: #ffffff;
     justify-content: center;
+
 }
-=======
->>>>>>> ef9d12d6ffa202479bdc0f439c243c42439a0646
-
-/* Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ конец */
-
-/* Медиазапросы */
 
 
-<<<<<<< HEAD
-    .header{
-        padding: 0vw;
-        margin-bottom: 0vh;
-    }
 
-    .header-container{
-        display: grid;
-        align-content: center;
-        padding: 0;
-        justify-content: center;
-    }
-    
-    
-    .header-panel {
-        display: grid;
-        grid-template-columns: auto 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "logo-nav header__contacts header__contacts burger"
-        "button-header button-header button-header button-header";
-        grid-area: none;
-        justify-items: end;
-    }
-    
-    .logo-nav {
-        grid-area: logo-nav;
-        width: 30vw;
-    }
-    
-    .header__contacts{
-        grid-area: header__contacts;
-    }
+@media (max-width: 770px) {
+.container__banner-top{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #FDDC4E;
+    border-radius: 1vh;
+    max-width: 100%;
+    height: 45vh;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
 
-    .vk {
-        grid-area: vk;
-        /* padding: 0vh 0.5vw; */
-        margin-right: 5vw;
-    }
-    
-    .tg {
-        grid-area: tg;
-        /* padding: 0vh 0.5vw; */
-    }
-        
-    .burger{
-        border: 1px dashed green;
-        width: 28px;
-        height: 14px;
-        grid-area: burger;
-        padding-left: 0.5vw;
-    }
-
-    .button-header {
-        max-width: 100%;
-        display: flex;
-        grid-area: button-header;
-        background-color: #e21811;
-        padding: 2vw 20vw;
-        border-radius: 5vw;
-        color: #ffffff;
-        border-style: none;
-        font-size: 0.7rem;
-        justify-content: stretch;
-        margin: 2px auto;
-    }
-=======
->>>>>>> ef9d12d6ffa202479bdc0f439c243c42439a0646
-
-/* верхний баннер */
-
-
-<<<<<<< HEAD
 .text__banner-top{
     /* border: 1px dashed red; */
     width: 100%;
@@ -245,7 +181,7 @@
     background-color: #EA5D4A;
     color: #ffffff;
     justify-content: center;
-}
-=======
 
->>>>>>> ef9d12d6ffa202479bdc0f439c243c42439a0646
+}
+
+}
