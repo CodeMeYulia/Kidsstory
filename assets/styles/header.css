@@ -112,17 +112,15 @@
     margin: 2px auto;
 }
 
-.burger{
+#burger, [for="burger"]{
     display: none;
 }
 
 
-@media (max-width: 770px) {
+@media screen and (max-width: 770px) {
 
     .header-address,
     .header-address__metrostation,
-    .navbar, 
-    .navbar-link, 
     .icon_phone, 
     .header__tel,
     .call {
@@ -183,14 +181,42 @@
         /* padding: 0vh 0.5vw; */
     }
     
-    
-    .burger{
-        border: 1px dashed green;
-        width: 28px;
-        height: 14px;
-        grid-area: burger;
-        padding-left: 0.5vw;
+    [for="burger"]{
+        /* border: 1px dashed blue; */
+        color: #e21811;
+        text-align: center;
+        display: block;
+        width: 30px;
+        font-size: 2rem;
     }
+
+.navbar{ display: none;
+position: fixed;
+top: 0;
+margin-top: 60px;
+background:#e21811d0;
+border-radius: 12px;
+width: 60%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+z-index: 10;
+}
+
+.navbar-link{
+    padding: 0vh 0.4vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+#burger:checked + label + nav{
+display: block;
+}
 
     .button-header {
         max-width: 100%;
@@ -205,4 +231,5 @@
         justify-content: stretch;
         margin: 2px auto;
     }
+
 }
