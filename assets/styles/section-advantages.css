@@ -1,6 +1,6 @@
 /* преимущества Айгуль */
 
-.section-advantages{
+.section-advantages__items{
     min-width: 74vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
