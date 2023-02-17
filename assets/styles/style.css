@@ -1,3 +1,7 @@
+* {
+    border: 1px dashed darkkhaki;
+}
+
 .wrapper{
     padding: 0.7vh 3vw;
     font-family: 'Montserrat', sans-serif;
