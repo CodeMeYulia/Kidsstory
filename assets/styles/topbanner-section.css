@@ -1,153 +1,91 @@
 .container__banner-top{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 25%;
-    grid-template-areas: "text__banner-top img-banner-top ."; */
-    /* background-color: #FDDC4E; */
-    border-radius: 1vh;
-    height: 45vh;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.top-banner__main{
-    background-image: url(../images/kids.png), url(../images/Vector-downleft-topbanner.png), url(../images/Vector-downright-topbanner.png), url(../images/withe-circles.png), url(../images/Vecto_circle.png), url(../images/Rectangle_BackYellow.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 60% 50%, -1%, 76%, 35% 100%, 50% 150%, center;
     background-color: #FDDC4E;
-    height: 43vh;
-    
-}
-.text__banner-top{
-    /* border: 1px dashed red; */
-    padding: 3vw 5vw;
-    align-content: center;
-}
-.h1__banner-top{
-    /* border: 1px dashed blue; */
-    color: #334155;
-    font-size: 5vw;
-    line-height: 0vw;
-    padding-top: 8vh;
-}
-.h2__banner-top{
-    /* border: 1px dashed green; */
-    color: #334155;
-    font-size: 1.6rem;
-    line-height: 2vw;
-}
-
-
-.book-form__banner-top{
-    /* border: 1px dashed rgb(66, 28, 138); */
-    background-color: #8081bd;
-    height: 43vh;
-    width: 20vw;
-    border-radius: 1vh;
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-}
-.form-container{
     display: grid;
-    /* border: 1px dashed #d86e0c; */
-    margin: 0.2vw 2vw;
-    
+    grid-template-columns: 1fr 25%;
+    grid-template-areas: "banner-block book-form__banner-top";
+    max-width: 1900px;
+    height: 500px;
+    border-radius: 2vh;
+    margin: auto;
 }
 
-.h2-form{
-    color: #ffffff;
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 1.5rem;
-    margin: 1.5vw 0vw;
-}
-.p-form{
-    color: #ffffff;
-    /* padding: 0.1vw 1vw; */
-    font-size: 0.6rem;
-    margin-bottom: 0.5vw;
-}
-.input{
-    display: flex;
-    border-style: none;
-    padding: 0.5rem 1.2rem;
-    border-radius: 1vw;
-    margin: 0.5vh;
-    font-size: 0.8rem;
-}
-.input-yes{
-    color: #ffffff;
-    font-size: 0.8rem;
-}
-.input-book{
-    background-color: #EA5D4A;
-    color: #ffffff;
-    justify-content: center;
-
-}
-
-
-
-@media (max-width: 770px) {
-.container__banner-top{
+.banner-block{
+    grid-area: banner-block;
+    height: 500px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #FDDC4E;
-    border-radius: 1vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-image: url(../images/GroupKids.png), url(../images/Vector-downright-topbanner.png), url(../images/Vecto_circle.png), url(../images/Vector-downleft-topbanner.png), url(../images/withe-circles.png) ;
+    background-repeat: no-repeat;
+    background-size: 10, 20%, 35%, 20%, 15%;
+    background-position: 90% 30%, 108% 1%, 70% 300%, -3%, 45% 100%;
+}
+
+.text__banner-top_container{
+    /* background-color: #1bc2b4; */
+    display: grid;
     max-width: 100%;
-    height: 45vh;
-    /* position: relative;
-    top: 0;
-    left: 0; */
+    align-content: center;
+    padding-left: 3vw;
 }
 
 .text__banner-top{
-    /* border: 1px dashed red; */
-    width: 100%;
-    grid-area: text__banner-top;
-    display: grid;
-    align-content: center;
-    padding: 0px 1vw 0px 10vw;
-    justify-content: center;
-}
-.h1__banner-top{
-    /* border: 1px dashed blue; */
-    color: #334155;
-    font-size: 6vw;
-    line-height: 0vw;
-}
-.h2__banner-top{
-    /* border: 1px dashed green; */
-    color: #334155;
-    font-size: 1.6rem;
-    line-height: 2vw;
-}
-.img-banner-top{
-    /* border: 1px dashed rgb(185, 10, 177); */
-    grid-area: img-banner-top;
+    /* background-color: #e04efd; */
     display: flex;
-    height: 45vh;
-}
-.img-banner-top img{
-    height: 45vh;
+    flex-direction: column;
+    grid-area: text__banner-top;
+    min-height: 100px;
 }
 
+.h1__banner-top{
+    display: grid;
+    /* border: 1px dashed blue; */
+    color: #334155;
+    font-size: 5rem;
+    line-height: 0rem;
+}
+.h2__banner-top{
+    display: grid;
+    /* border: 1px dashed green; */
+    color: #334155;
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    
+}
+
+.img-kids_container{
+    background-color: #4efd5c;
+    display: grid;
+    grid-area: img-kids_container;
+    overflow: hidden;
+    
+    box-sizing: border-box;
+
+}
+
+.img-kids{
+    display: grid;
+    /* background-image: url(../images/GroupKids.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10%; */
+}
+
+.img-kids img{
+    width: 100%;
+    display: grid;
+}
 .book-form__banner-top{
-    /* border: 1px dashed rgb(66, 28, 138); */
+    grid-area: book-form__banner-top;
     background-color: #8081bd;
-    height: 45vh;
-    width: 20vw;
-    border-radius: 1vh;
+    /* max-width: 400px; */
+    height: 500px;
+    border-radius: 0vh 1vh 1vh 0vh;
     
 }
 .form-container{
     display: grid;
-    margin: 0.2vw 2vw;
-    
+    margin: 1vw 2vw;
+   
 }
 
 .h2-form{
@@ -159,8 +97,7 @@
 }
 .p-form{
     color: #ffffff;
-    /* padding: 0.1vw 1vw; */
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin-bottom: 0.5vw;
 }
 .input{
@@ -180,6 +117,145 @@
     color: #ffffff;
     justify-content: center;
 
-}
 
 }
+
+===========================================================================
+
+  @media (max-width: 770px) {
+    /* стили для xs-устройств */
+
+
+    .container__banner-top{
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text__banner-top .img-kids book-form__banner-top" ;
+        background-color: #FDDC4E;
+        border-radius: 2vh;
+        max-width: 100%;
+        height: 500px;
+        margin: auto;
+    }
+   
+    .text__banner-top{
+        border: 1px dashed red;
+        width: 100%;
+        height: 150px;
+        grid-area: text__banner-top;
+        
+    }
+    .h1__banner-top{
+        border: 1px dashed blue;
+        color: #334155;
+        font-size: 2.5rem;
+        /* line-height: 1rem; */
+    }
+    .h2__banner-top{
+        border: 1px dashed green;
+        color: #334155;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        padding-right: 1vw;
+    }
+    .top-banner__main{
+        /* grid-area: top-banner__main;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: "text__banner-top" "img-kids";
+        max-width: 100%;
+        margin-bottom: 2vh;
+        border-radius: 2vh; */
+        /* background-color: #4efd6b; */
+        /* min-height: 500px;
+        display: flex;
+        align-items: end;
+        justify-content: flex-center; */
+        
+    }
+   
+    .img-kids{
+        
+    }
+
+    .img-kids img{
+       
+
+    }
+
+    
+   
+    .book-form__banner-top{
+        grid-area: book-form__banner-top;
+        background-color: #8081bd;
+        height: 70vh;
+        width: 100%;
+        border-radius: 2vh;
+       
+    }
+    .form-container{
+        display: grid;
+        margin: 0.2vw 4vw;
+       
+    }
+   
+    .h2-form{
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.8rem;
+        margin: 7.5vw auto;
+    }
+    .p-form{
+        color: #ffffff;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-bottom: 1vw;
+        padding-left: 2vw;
+    }
+    .input{
+        display: flex;
+        border-style: none;
+        padding: 1rem 1.2rem;
+        border-radius: 1vw;
+        margin: 1vh;
+        font-size: 0.8rem;
+    }
+    .input-yes{
+        color: #ffffff;
+        font-size: 1rem;
+    }
+    .input-book{
+        background-color: #EA5D4A;
+        color: #ffffff;
+        justify-content: center;
+        padding: 10px 0px;
+        border-radius: 5vw;
+    }
+   
+    }
+
+
+    @media (min-width: 1200px) {
+        /* стили для xl-устройств */
+    
+    
+      }
+    
+      @media (min-width: 991px) and (max-width: 1199px) {
+        /* стили для lg-устройств */
+    
+    
+      }
+     
+      @media (min-width: 768px) and (max-width: 991px) {
+        /* стили для md-устройств */
+    
+    
+      }
+    
+      @media (min-width: 576px) and (max-width: 768px){
+         /* стили для sm-устройств */
+    
+    
+      }
+    
