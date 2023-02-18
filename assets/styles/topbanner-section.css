@@ -132,34 +132,40 @@
     }
 
     .text__banner-top_container{
+        /* background-color: #1bc2b4; */
         display: grid;
         max-width: 100%;
         align-content: center;
         padding-left: 3vw;
     }
+    
+    
     .text__banner-top{
-       display: flex;
-       flex-direction: column;
-       grid-area: text__banner-top;
-       min-height: 100px;
+        /* background-color: #e04efd; */
+        display: flex;
+        flex-direction: column;
+        grid-area: text__banner-top;
+        min-height: 100px;
         text-shadow: 0 0 1px white,0 0 2px #ffffff,0 0 1px #fdfdfd,0 0 2px white;
-        
     }
+    
     
     .h1__banner-top{
         display: grid;
+        /* border: 1px dashed blue; */
         color: #334155;
         font-size: 5rem;
         line-height: 0rem;
-        margin-top: 30%;
     }
-    /* .h2__banner-top{
+    .h2__banner-top{
         display: grid;
+        /* border: 1px dashed green; */
         color: #334155;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 1.6rem;
-        
-    } */
+       
+    }
+
 
     .book-form__banner-top{
         grid-area: book-form__banner-top;
@@ -168,39 +174,18 @@
         border-radius: 0vh 1vh 1vh 0vh;
         
     }
-
-
-    .text__banner-top{
-        width: 100%;
-        text-shadow: none;
-        flex-wrap: wrap;
-        align-content: start;
-    }
-    .h1__banner-top{
-        color: #334155;
-        font-size: 2.2rem;
-        line-height: 1rem;
-    }
-    .h2__banner-top{
-        color: #334155;
-        font-size: 0.8rem;
-        font-weight: bold;
-        line-height: 0.6rem;
-        padding: 0 vw;
-    }
+    
        
 .img-kids_container{
-    max-width: 100%;
+    width: 100%;
     height: 230px;
     grid-area: img-kids_container;
     display: grid;
     overflow: hidden;
     justify-content: end;
+    display: none;
 }
-.img-kids{
-    width: 100%;
-   
-}
+
    
     .form-container{
         display: grid;
@@ -239,9 +224,7 @@
         justify-content: center;
     
     }
-    .img-kids_container{
-        display: none;
-    }
+  
   }
 
 
@@ -264,6 +247,13 @@
         background-size: 20%, 100%, 30%, 39%, 25%;
         background-position: 5% 50%, 100% -10%, 108% -10%, 93% 10%, -2%;
     }
+
+.text__banner-top_container{
+    display: grid;
+    max-width: 100%;
+    align-content: center;
+    padding-left: 3vw;
+}
 
     .text__banner-top{
         display: flex;
