@@ -1,12 +1,12 @@
-.aside-time-wrapper {
-    border: 1px solid red;
+.aside-wrapper {
     justify-content: center;
     display: flex;
 }
 
-.aside-time-wrapper__container {
+.aside-wrapper__container {
     width: 70vw;
-    border: 1px solid blue;
+    margin-top: 6.375em;
+    margin-bottom: 7.25em;
 }
 
 .aside-time {
@@ -17,12 +17,10 @@
 }
 
 .aside-time__item {
-    border: 1px solid black;
     display: flex;
 }
 
 .aside-time__text {
-    border: 1px solid black;
     align-self:center;
     font-family: 'Montserrat';
     color: #334155;
@@ -33,8 +31,8 @@
 @media screen and (max-width: 960px) {
     .aside-wrapper__container {
         width: 90vw;
-        border: 1px solid blue;
     }
+
     .aside-time {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -43,14 +41,12 @@
     }
 
     .aside-time__item {
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .aside-time__text {
-        border: 1px solid black;
         font-family: 'Montserrat';
         color: #334155;
         font-size: 0.625em;
@@ -68,8 +64,8 @@
 @media screen and (min-width: 961px) and (max-width: 1024px){
     .aside-wrapper__container {
         width: 80vw;
-        border: 1px solid blue;
     }
+
     .aside-time {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -78,14 +74,12 @@
     }
 
     .aside-time__item {
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .aside-time__text {
-        border: 1px solid black;
         font-family: 'Montserrat';
         color: #334155;
         font-size: 0.875em;
@@ -114,6 +108,5 @@
 
     .aside-wrapper__container {
         width: 80vw;
-        border: 1px solid blue;
     }
 }
