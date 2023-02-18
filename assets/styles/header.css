@@ -125,7 +125,6 @@
 /* МЕДИАЗАПРОСЫ */
 /* ================================================================= */
 
-
 @media (min-width: 991px) and (max-width: 1199px){
     .header-container{
         min-height: 3vh;
@@ -150,12 +149,10 @@
         align-items: center;
     }
 
-
     .header-address__metrostation {
         grid-area: header-address__metrostation;
         color: cornflowerblue;
     }
-
 
     .header-panel {
         grid-area: header-panel;
@@ -169,7 +166,6 @@
     .header__contacts {
         display: none;
     }
-
 
     .logo-nav {
         grid-area: logo-nav;
@@ -254,12 +250,10 @@
         align-items: center;
     }
 
-
     .header-address__metrostation {
         grid-area: header-address__metrostation;
         color: cornflowerblue;
     }
-
 
     .header-panel {
         grid-area: header-panel;
@@ -273,7 +267,6 @@
     .header__contacts {
         display: none;
     }
-
 
     .logo-nav {
         grid-area: logo-nav;
@@ -472,6 +465,5 @@ user-select: none;
         font-size: 0.8rem;
         margin: 1vw 0;
     }
-
 
 }
