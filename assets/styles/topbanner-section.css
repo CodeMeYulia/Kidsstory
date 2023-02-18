@@ -453,7 +453,7 @@
   }
 
 
-  @media (min-width: 768px) and (max-width: 991px){
+  @media (min-width: 770px) and (max-width: 991px){
 
     .container__banner-top{
         grid-template-columns: 1fr 25%;
@@ -550,7 +550,7 @@
 
 
 
-  @media (max-width: 770px) {
+  @media (max-width: 769px) {
     /* стили для xs-устройств */
 
     .container__banner-top{
@@ -581,7 +581,7 @@
         background-repeat: no-repeat;
         background-size: 30%, 50%, 59%, 30%;
         background-position: 25% 100%, 70% 0%, 180% 25%, -2%;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     .book-form__banner-top{
         grid-area: book-form__banner-top;
@@ -591,7 +591,7 @@
         border-radius: 2vh;
     }
 .banner-block{
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
     
 }
 .text__banner-top_container{
@@ -642,7 +642,7 @@
         color: #ffffff;
         font-size: 1.1rem;
         font-weight: 600;
-        line-height: 1.2rem;
+        line-height: 1.1rem;
         margin: 2vw auto;
         padding-left: 2vw;
     }
@@ -658,7 +658,7 @@
         border-style: none;
         padding: 0.4rem 1rem;
         border-radius: 7vw;
-        margin: 0.7vh;
+        margin: 0.5vh;
         font-size: 0.7rem;
     }
     .input-yes{
