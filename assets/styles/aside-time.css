@@ -49,7 +49,8 @@
     .aside-time__text {
         font-family: 'Montserrat';
         color: #334155;
-        font-size: 0.625em;
+        font-size: 1em;
+        /*font-size: 0.625em;*/
         text-align: center;
         margin-left: 0;
     }

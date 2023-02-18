@@ -1,47 +1,37 @@
-
-
 .aside-services-wrapper {
-    border: 1px solid red;
     justify-content: center;
     display: flex;
 }
 
 .aside-services-wrapper__container {
     width: 74vw;
-    border: 1px solid blue;
 }
 
 .aside-services {
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 100%;
     row-gap: 1.25em;
 }
 
 .aside-services__first-row {
-    border: 1px solid green;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
     column-gap: 15px;
 }
 
 .aside-services__second-row {
-    border: 1px solid green;
     display: grid;
     grid-template-columns: 1.2fr 1fr 1.2fr 1.2fr;
     column-gap: 15px;
 }
 
 .aside-services__third-row {
-    border: 1px solid green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
 }
 
-
 .aside-services__item {
-    border: 1px solid rgb(255, 0, 34);
     display: flex;
     background-color: #FFF6D1;
     border-radius: 10px;
@@ -52,24 +42,8 @@
     margin: 0.75em 0 0.75em 0.75em;
 }
 
-
-/*@media screen and (min-width: 1500px) and (max-width: 1919px) {
-    .aside-services-wrapper__container {
-        width: 80vw;
-        border: 1px solid blue;
-    }
-
-    .aside-services__img {
-        display: block;
-        width: 57px;
-    }
-}*/
-
-
-
 /*все, что к тексту,шрифтам*/
 .aside-services-text_heading {
-    border: 1px solid orange;
     margin-top: 0;
     margin-bottom: 0.875em;
     font-family: 'Montserrat';
@@ -81,9 +55,8 @@
 
 
 .aside-services-text_item {
-
-    border: 1px solid orange;
-    margin: 0;
+    margin-right: 0.625em;
+    margin-left: 0.625em;
     font-family: 'Montserrat';
     font-style: bold;
     font-size: 1em;
@@ -92,3 +65,71 @@
     text-align: center;
     flex-grow: 1;
 }
+
+
+@media screen and (min-width: 1500px) and (max-width: 1919px) {
+    .aside-services-wrapper__container {
+        width: 80vw;
+    }
+
+    .aside-services__img {
+        display: block;
+        width: 76px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .aside-services-wrapper__container {
+        width: 80vw;
+    }
+
+    .aside-services__img {
+        display: block;
+        width: 56px;
+    }
+
+    .aside-services-text_item{
+        font-size: 0.875em;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1199px) {
+    .aside-services-wrapper__container {
+        width: 90vw;
+    }
+
+    .aside-services__first-row, 
+    .aside-services__second-row,
+    .aside-services__third-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.25em;
+        column-gap: 15px;
+    }
+
+    .aside-services-text_heading {
+        margin-top: 1.75em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .aside-services-wrapper__container {
+        width: 90vw;
+    }
+
+    .aside-services__first-row, 
+    .aside-services__second-row,
+    .aside-services__third-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1.25em;
+        column-gap: 15px;
+    }
+
+    .aside-services-text_heading {
+        font-size: 1.5em;
+        color: #8081BD;
+        margin-top: 1.75em;
+    }
+}
+
