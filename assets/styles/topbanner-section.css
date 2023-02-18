@@ -120,245 +120,46 @@
 
 /* Медиазапросы====================================================== */
 
-
 @media (min-width: 991px) and (max-width: 1199px) {
-    /* стили для lg-устройств */
-
+   
 
     .banner-block{
         grid-area: banner-block;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
         background-image: url(../images/withe-circles.png), url(../images/GroupKids.png), url(../images/Vector-downright-topbanner.png), url(../images/Vecto_circle.png), url(../images/Vector-downleft-topbanner.png);
         background-repeat: no-repeat;
         background-size: 20%, 105%, 30%, 39%, 25%;
         background-position: 5% 50%, 90% 30%, 108% -10%, 93% 10%, -2%;
     }
 
-
-    .text__banner-top{
-        /* background-color: #e04efd; */
-        display: flex;
-        flex-direction: column;
-        grid-area: text__banner-top;
-        min-height: 100px;
-        text-shadow: 0 0 1px white,0 0 2px #ffffff,0 0 1px #fdfdfd,0 0 2px white;
+    .text__banner-top_container{
+        display: grid;
+        max-width: 100%;
+        align-content: center;
+        padding-left: 3vw;
     }
-   
+    .text__banner-top{
+       display: flex;
+       flex-direction: column;
+       grid-area: text__banner-top;
+       min-height: 100px;
+        text-shadow: 0 0 1px white,0 0 2px #ffffff,0 0 1px #fdfdfd,0 0 2px white;
+        
+    }
+    
     .h1__banner-top{
         display: grid;
-        /* border: 1px dashed blue; */
         color: #334155;
         font-size: 5rem;
         line-height: 0rem;
-       
-    }
-    .h2__banner-top{
-        display: grid;
-        /* border: 1px dashed green; */
-        color: #334155;
-        font-size: 1.8rem;
-        line-height: 1.6rem;
-       
-    }
-
-
-    .book-form__banner-top{
-        grid-area: book-form__banner-top;
-        background-color: #8081bd;
-        height: 500px;
-        border-radius: 0vh 1vh 1vh 0vh;
-       
-    }
-    .form-container{
-        display: grid;
-        margin: 3vw 2vw;
-       
-    }
-   
-    .h2-form{
-        color: #ffffff;
-        font-size: 1.2rem;
-        font-weight: 600;
-        line-height: 1.5rem;
-        margin: 1.5vw 0vw;
-       
-    }
-    .p-form{
-        color: #ffffff;
-        font-size: 0.6rem;
-        margin-bottom: 0.5vw;
-    }
-    .input{
-        display: flex;
-        border-style: none;
-        padding: 0.5rem 0.7rem;
-        border-radius: 1vw;
-        margin-top: 1.5vh;
-        font-size: 0.8rem;
-    }
-    .input-yes{
-        color: #ffffff;
-        font-size: 0.7rem;
-    }
-    .input-book{
-        background-color: #EA5D4A;
-        color: #ffffff;
-        justify-content: center;
-   
-    }
-    .img-kids_container{
-        display: none;
-    }
-  }
-
-
-  @media (min-width: 768px) and (max-width: 991px){
-
-
-    .container__banner-top{
-        grid-template-columns: 1fr 25%;
-        grid-template-areas: "banner-block book-form__banner-top";
-        height: 400px;
-    }
-
-
-    .banner-block{
-        grid-area: banner-block;
-        height: 400px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
-        background-image: url(../images/withe-circles.png), url(../images/GroupKids.png), url(../images/Vector-downright-topbanner.png), url(../images/Vecto_circle.png), url(../images/Vector-downleft-topbanner.png);
-        background-repeat: no-repeat;
-        background-size: 20%, 100%, 30%, 39%, 25%;
-        background-position: 5% 50%, 100% -10%, 108% -10%, 93% 10%, -2%;
-    }
-
-
-    .text__banner-top{
-        display: flex;
-        flex-direction: column;
-        grid-area: text__banner-top;
-        min-height: 80px;
         margin-top: 30%;
-        text-shadow: 0 0 1px white,0 0 2px #ffffff,0 0 1px #fdfdfd,0 0 2px white;
-       
     }
-   
-    .h1__banner-top{
+    /* .h2__banner-top{
         display: grid;
-        /* border: 1px dashed blue; */
-        color: #334155;
-        font-size: 4rem;
-        line-height: 0rem;
-       
-    }
-    .h2__banner-top{
-        display: grid;
-        /* border: 1px dashed green; */
         color: #334155;
         font-size: 1.6rem;
         line-height: 1.6rem;
-       
-    }
-
-
-    .book-form__banner-top{
-        grid-area: book-form__banner-top;
-        background-color: #8081bd;
-        height: 400px;
-        border-radius: 0vh 1vh 1vh 0vh;
-       
-    }
-    .form-container{
-        display: grid;
-        margin: 2vw 1vw;
-    }
-   
-    .h2-form{
-        color: #ffffff;
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 1.5rem;
-        margin: 1.5vw 0vw;
-       
-    }
-    .p-form{
-        color: #ffffff;
-        font-size: 0.6rem;
-        margin-bottom: 0.5vw;
-    }
-    .input{
-        display: flex;
-        border-style: none;
-        padding: 0.5rem 0.7rem;
-        border-radius: 1vw;
-        margin-top: 0.5vh;
-        font-size: 0.6rem;
-    }
-    .input-yes{
-        color: #ffffff;
-        font-size: 0.6rem;
-    }
-    .input-book{
-        background-color: #EA5D4A;
-        color: #ffffff;
-        justify-content: center;
-   
-    }
-    .img-kids_container{
-        display: none;
-    }
-  }
-
-
-/* Медиазапросы====================================================== */
-
-@media (min-width: 991px) and (max-width: 1199px) {
-    /* стили для lg-устройств */
-
-    .banner-block{
-        grid-area: banner-block;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        background-image: url(../images/withe-circles.png), url(../images/GroupKids.png), url(../images/Vector-downright-topbanner.png), url(../images/Vecto_circle.png), url(../images/Vector-downleft-topbanner.png);
-        background-repeat: no-repeat;
-        background-size: 20%, 105%, 30%, 39%, 25%;
-        background-position: 5% 50%, 90% 30%, 108% -10%, 93% 10%, -2%;
-    }
-
-    
-
-    .text__banner-top{
-        /* background-color: #e04efd; */
-        display: flex;
-        flex-direction: column;
-        grid-area: text__banner-top;
-        min-height: 100px;
-        text-shadow: 0 0 1px white,0 0 2px #ffffff,0 0 1px #fdfdfd,0 0 2px white;
-    }
-    
-    .h1__banner-top{
-        display: grid;
-        /* border: 1px dashed blue; */
-        color: #334155;
-        font-size: 5rem;
-        line-height: 0rem;
         
-    }
-    .h2__banner-top{
-        display: grid;
-        /* border: 1px dashed green; */
-        color: #334155;
-        font-size: 1.8rem;
-        line-height: 1.6rem;
-        
-    }
+    } */
 
     .book-form__banner-top{
         grid-area: book-form__banner-top;
@@ -367,17 +168,8 @@
         border-radius: 0vh 1vh 1vh 0vh;
         
     }
-.banner-block{
-    grid-template-rows: 1fr;
-   
-}
-.text__banner-top_container{
-    max-width: 100%;
-    grid-area: text__banner-top_container;
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
-}
+
+
     .text__banner-top{
         width: 100%;
         text-shadow: none;
@@ -453,7 +245,7 @@
   }
 
 
-  @media (min-width: 770px) and (max-width: 991px){
+  @media (min-width: 771px) and (max-width: 990px){
 
     .container__banner-top{
         grid-template-columns: 1fr 25%;
@@ -485,7 +277,6 @@
     
     .h1__banner-top{
         display: grid;
-        /* border: 1px dashed blue; */
         color: #334155;
         font-size: 4rem;
         line-height: 0rem;
@@ -493,7 +284,6 @@
     }
     .h2__banner-top{
         display: grid;
-        /* border: 1px dashed green; */
         color: #334155;
         font-size: 1.6rem;
         line-height: 1.6rem;
@@ -550,7 +340,7 @@
 
 
 
-  @media (max-width: 769px) {
+  @media (max-width: 770px) {
     /* стили для xs-устройств */
 
     .container__banner-top{
