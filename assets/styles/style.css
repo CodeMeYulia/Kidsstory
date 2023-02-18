@@ -1,5 +1,5 @@
 * {
-    border: 1px dashed darkkhaki;
+    /* border: 1px dashed darkkhaki; */
 }
 
 .wrapper{
@@ -7,10 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* .main{
+.main{
     max-width: 1900px;
     margin: auto;
-} */
+}
 /* Yulia Header начало */
 /* Yulia Header конец */
 
