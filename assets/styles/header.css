@@ -1,26 +1,11 @@
-.header, 
-.header-container, 
-.header-address, 
-.header-panel, 
-.logo-nav, 
-.navbar, 
-.header__tel, 
-.header__contacts, 
-.vk, 
-.tg {
-    /* border: 1px dashed darkkhaki; */
-}
-
-.header{
-    min-height: 5vh;
-    padding: 0.5vw 1vw;
-    margin-bottom: 1vh;
-}
 .header-container{
+    min-height: 5vh;
     display: grid;
     grid-template-areas: auto 1fr / 0.5fr 1.5fr auto 1fr;
     align-content: center;
-    padding: 0vh 6vw;
+    margin-bottom: 1vh;
+    max-width: 1900px;
+    margin: auto;
 }
 .header-address {
     display: grid;
@@ -31,6 +16,7 @@
     color: #EA5D4A;
     font-size: 0.7rem;
     align-content: center;
+    padding: 0vh 2vw;
 }
 .header-address__metrostation {
   color: cornflowerblue;
@@ -42,6 +28,9 @@
     grid-template-areas:
         "logo-nav navbar header__contacts button-header";
 }
+
+
+
 
 .logo-nav {
     grid-area: logo-nav;
@@ -56,13 +45,13 @@
 }
 .navbar-link{
     padding: 0vh 0.4vw;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #334155;
 }
 .icon_phone {
   grid-area: icon_phone;
-  padding: 0vh 1vw;
+  padding: 0px 1vw;
 }
 .header__tel{
     padding: 0vh 1vw 0vh 1vw;
@@ -85,17 +74,26 @@
     padding: 0vh 0.5vw;
 }
 
+
+
+
 .tg {
     grid-area: tg;
     padding: 0vh 0.5vw;
 }
 
+
+
+
 .call {
     grid-area: call;
     padding: 0vh 1vw;
     color: #EA5D4A;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
+
+
+
 
 .button-header {
     max-width: 12vw;
@@ -107,112 +105,327 @@
     border-radius: 1.3vw;
     color: #ffffff;
     border-style: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     justify-content: center;
-    margin: 2px auto;
+    margin: 0.2vw;
 }
+
+
+
 
 #burger, [for=burger]{
     display: none;
 }
 
 
-@media screen and (max-width: 770px) {
+
+
+
+
+/* МЕДИАЗАПРОСЫ */
+/* ================================================================= */
+
+@media (min-width: 991px) and (max-width: 1199px){
+    .header-container{
+        min-height: 3vh;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+        "header-address header-address"
+        "header-panel header-panel";
+        align-content: center;
+        margin-bottom: 1vh;
+        max-width: 1900px;
+        margin: auto;
+    }
+    .header-address {
+        grid-area: header-address;
+        display: flex;
+        justify-content: center;
+        color: #EA5D4A;
+        font-size: 0.6rem;
+        padding: vh 2vw;
+        align-items: center;
+    }
+
+    .header-address__metrostation {
+        grid-area: header-address__metrostation;
+        color: cornflowerblue;
+    }
+
+    .header-panel {
+        grid-area: header-panel;
+        display: grid;
+        grid-template-areas:
+        "logo-nav navbar button-header";
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    .header__contacts {
+        display: none;
+    }
+
+    .logo-nav {
+        grid-area: logo-nav;
+        width: 10vw;
+        margin: 0vw auto;
+    }
+   
+    .navbar-link{
+        padding: 0vh 1.2vw;
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: #334155;
+    }
+    .icon_phone {
+      grid-area: icon_phone;
+      padding: 0vh 1vw;
+    }
+    .header__tel{
+        padding: 0vh 1vw 0vh 1vw;
+    }
+   
+    .vk {
+        grid-area: vk;
+        padding: 0vh 0.5vw;
+    }
+   
+    .tg {
+        grid-area: tg;
+        padding: 0vh 0.5vw;
+    }
+   
+    .call {
+        grid-area: call;
+        padding: 0vh 1vw;
+        color: #EA5D4A;
+        font-size: 0.7rem;
+    }
+   
+    .button-header {
+        max-width: 50vw;
+        display: flex;
+        grid-area: button-header;
+        background-color: #8081bd;
+        padding: 0.5vw 1vw;
+        border-radius: 1.3vw;
+        color: #ffffff;
+        border-style: none;
+        font-size: 0.7rem;
+    }
+   
+    #burger, [for=burger]{
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 771px) and (max-width: 990px){
+
+
+    .header-container{
+        min-height: 3vh;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+        "header-address header-address"
+        "header-panel header-panel";
+        align-content: center;
+        margin-bottom: 1vh;
+        max-width: 1900px;
+        margin: auto;
+    }
+    .header-address {
+        grid-area: header-address;
+        display: flex;
+        justify-content: center;
+        color: #EA5D4A;
+        font-size: 0.6rem;
+        padding: vh 2vw;
+        align-items: center;
+    }
+
+    .header-address__metrostation {
+        grid-area: header-address__metrostation;
+        color: cornflowerblue;
+    }
+
+    .header-panel {
+        grid-area: header-panel;
+        display: grid;
+        grid-template-areas:
+        "logo-nav navbar button-header";
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    .header__contacts {
+        display: none;
+    }
+
+    .logo-nav {
+        grid-area: logo-nav;
+        width: 10vw;
+        margin: 0vw auto;
+    }
+   
+    .navbar-link{
+        padding: 0vh 1.2vw;
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: #334155;
+    }
+    .icon_phone {
+      grid-area: icon_phone;
+      padding: 0vh 1vw;
+    }
+    .header__tel{
+        padding: 0vh 1vw 0vh 1vw;
+    }
+   
+    .vk {
+        grid-area: vk;
+        padding: 0vh 0.5vw;
+    }
+   
+    .tg {
+        grid-area: tg;
+        padding: 0vh 0.5vw;
+    }
+   
+    .call {
+        grid-area: call;
+        padding: 0vh 1vw;
+        color: #EA5D4A;
+        font-size: 0.7rem;
+    }
+   
+    .button-header {
+        max-width: 50vw;
+        display: flex;
+        grid-area: button-header;
+        background-color: #8081bd;
+        padding: 0.5vw 1vw;
+        border-radius: 1.3vw;
+        color: #ffffff;
+        border-style: none;
+        font-size: 0.6rem;
+    }
+   
+    #burger, [for=burger]{
+        display: none;
+    }
+}
+
+
+
+
+    @media screen and (max-width: 770px){
+
 
     .header-address,
     .header-address__metrostation,
-    .icon_phone, 
+    .icon_phone,
     .header__tel,
     .call {
         display: none;
     }
-    
-    .header,
-    .header-container,
-    .header-panel, 
-    .logo-nav,
-    .vk,
-    .tg
-    {
-        /* border: 1px dashed rgb(255, 51, 0); */
-    }
-
-    .header{
-        padding: 0vw;
-        margin-bottom: 0vh;
-    }
-
+   
     .header-container{
         display: grid;
         align-content: center;
+        max-width: 100%;
         padding: 0;
-        justify-content: center;
+        
     }
-    
-    
+   
     .header-panel {
         display: grid;
-        grid-template-columns: auto 1fr 1fr 1fr;
+        width: 100%;
+        grid-template-columns: 1fr 0.5fr 0.5fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "logo-nav header__contacts header__contacts burger"
-        "button-header button-header button-header button-header";
-        grid-area: none;
-        justify-items: end;
+        grid-template-areas:
+        "logo-nav header__contacts burger"
+        "button-header button-header button-header";
+        justify-items: stretch;
+        position: relative;
+        top: 0;
+        right: 0;
+        align-items: center;
     }
-    
+   
     .logo-nav {
+        margin-left: 0;
         grid-area: logo-nav;
-        width: 30vw;
+        width: 35vw;
     }
-    
+   
     .header__contacts{
         grid-area: header__contacts;
+        padding: 0vw 0.3vw;
+       
     }
+
+
+
 
     .vk {
         grid-area: vk;
-        /* padding: 0vh 0.5vw; */
-        margin-right: 5vw;
+        margin-right: 2vw;
+        width: 6vw;
     }
-    
+   
     .tg {
         grid-area: tg;
-        /* padding: 0vh 0.5vw; */
+        width: 5vw;
     }
-    
+   
     [for=burger]{
-        /* border: 1px dashed blue; */
         cursor: pointer;
         display: block;
-        width: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
         text-align: center;
         color: #e21811;
-        font-size: 2rem;
+        font-size: 2.5em;
+        margin-top: 1.5vw;
+        justify-items: center;
+        padding: 0vw 1vw;
     }
+
+
+
 
     [for=burger]::before{
 content: "ⓧ";
     }
-    
-nav { 
+   
+    .navbar {
     /* display: none; */
 position: fixed;
 top: 0;
-margin-top: 60px;
-background:#e21811d0;
+margin-top: 70px;
+background:#8081bdce;
 border-radius: 12px;
-width: 60%;
+width: 75%;
 display: flex;
 justify-content: center;
 flex-direction: column;
 z-index: 10;
 user-select: none;
-}
+    }
+
+
+
 
     .navbar-link {
-    padding: 0vh 0.4vw;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: 1rem;
     text-decoration: none;  
@@ -221,26 +434,35 @@ user-select: none;
     padding: 15px;
     }
 
+
+
+
     #burger:checked + label + nav{
     display: none;
     }
+
+
+
 
     #burger:checked + [for=burger]::before{
         content: "☰";
     }
 
+
+
+
     .button-header {
         max-width: 100%;
         display: flex;
+        justify-items: stretch;
         grid-area: button-header;
-        background-color: #e21811;
-        padding: 2vw 20vw;
+        background-color: #EA5D4A;
+        padding: 2vw 0vw;
         border-radius: 5vw;
         color: #ffffff;
         border-style: none;
-        font-size: 0.7rem;
-        justify-content: stretch;
-        margin: 2px auto;
+        font-size: 0.8rem;
+        margin: 1vw 0;
     }
 
 }

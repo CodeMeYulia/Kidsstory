@@ -1,16 +1,24 @@
+* {
+    /* border: 1px dashed darkkhaki; */
+}
+
 .wrapper{
     padding: 0.7vh 3vw;
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
 }
 
-
+.main{
+    max-width: 1900px;
+    margin: auto;
+}
 /* Yulia Header начало */
 /* Yulia Header конец */
 
 /* Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ начало */
 /* Yulia ВЕРХНИЙ БАННЕР С ФОРМОЙ ЗАПИСИ конец */
 
-/* Медиазапросы */
+
 
 
 
