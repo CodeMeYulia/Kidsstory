@@ -3,6 +3,13 @@
     display: flex;
 }
 
+.aside-time-bacground-img {
+    display: block;
+    position: absolute;
+    top: 43.75em;
+    left: 0em;
+}
+
 .aside-wrapper__container {
     width: 70vw;
     margin-top: 6.375em;
@@ -68,6 +75,10 @@
         display: block;
         width: 57px;
     }
+
+    .aside-time-bacground-img {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1024px){
@@ -94,6 +105,10 @@
     .aside-time__img {
         display: block;
         width: 76px;
+    }
+
+    .aside-time-bacground-img {
+        display: none;
     }
 }
 
