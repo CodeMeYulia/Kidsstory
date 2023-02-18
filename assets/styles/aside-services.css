@@ -66,7 +66,13 @@
     flex-grow: 1;
 }
 
+/*Динамические эффекты*/
+.aside-services__item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+
+/* ------МЕДИА ЗАПРОСЫ-----*/
 @media screen and (min-width: 1500px) and (max-width: 1919px) {
     .aside-services-wrapper__container {
         width: 80vw;
@@ -101,7 +107,6 @@
     .aside-services__first-row, 
     .aside-services__second-row,
     .aside-services__third-row {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 1.25em;
         column-gap: 15px;
@@ -120,7 +125,6 @@
     .aside-services__first-row, 
     .aside-services__second-row,
     .aside-services__third-row {
-        display: grid;
         grid-template-columns: 1fr;
         row-gap: 1.25em;
         column-gap: 15px;
