@@ -53,6 +53,11 @@
 
 }
 
+a:hover {
+    color: #EA5D4A; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+   }
+
 .icon_phone {
   grid-area: icon_phone;
   padding: 0 1vw;

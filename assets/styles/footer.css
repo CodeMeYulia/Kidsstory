@@ -1,0 +1,11 @@
+.footer-container{
+    align-content: center;
+    color: #EA5D4A;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    max-width: 1900px;
+    min-height: 5vh;
+    margin: auto;
+    margin-top: 3vh;
+}
