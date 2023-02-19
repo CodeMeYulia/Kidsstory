@@ -1,166 +1,162 @@
 .header-container{
-    min-height: 5vh;
+    align-content: center;
     display: grid;
     grid-template-areas: auto 1fr / 0.5fr 1.5fr auto 1fr;
-    align-content: center;
+    margin: auto;
     margin-bottom: 1vh;
     max-width: 1900px;
-    margin: auto;
+    min-height: 5vh;
 }
 .header-address {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 2vw;
-    justify-content: end;
-    min-height: 3vh;
-    color: #EA5D4A;
-    font-size: 0.7rem;
     align-content: center;
-    padding: 0vh 2vw;
+    color: #EA5D4A;
+    column-gap: 2vw;
+    display: grid;
+    font-size: 0.7rem;
+    grid-auto-flow: column;
+    justify-content: flex-end;
+    min-height: 3vh;
+    padding: 0 2vw;
 }
 .header-address__metrostation {
   color: cornflowerblue;
 }
 .header-panel {
-    display: grid;
-    justify-content: space-around;
     align-items: center;
+    display: grid;
     grid-template-areas:
         "logo-nav navbar header__contacts button-header";
+    justify-content: space-around;
+
 }
-
-
-
 
 .logo-nav {
     grid-area: logo-nav;
+    margin: 0 auto;
     width: 8vw;
-    margin: 0vw auto;
+
 }
 .navbar{
     display: flex;
-    padding: 0px 1vw 0px 1vw;
     grid-area: navbar;
     justify-content: center;
+    padding: 0 1vw 0 1vw;
+
+
 }
 .navbar-link{
-    padding: 0vh 0.4vw;
-    font-size: 1rem;
-    text-decoration: none;
     color: #334155;
+    font-size: 1rem;
+    padding: 0 0.4vw;
+    text-decoration: none;
+
+
 }
+
 .icon_phone {
   grid-area: icon_phone;
-  padding: 0px 1vw;
+  padding: 0 1vw;
 }
+
 .header__tel{
-    padding: 0vh 1vw 0vh 1vw;
     font-weight: 600;
+    padding: 0 1vw 0 1vw;
 }
+
 .header__contacts {
-    grid-area: header__contacts;
+    align-content: center;
     display: grid;
+    grid-area: header__contacts;
+    grid-template-areas:
+    "icon_phone header__tel vk tg"
+    "call call call call";
     grid-template-columns: 1vw auto 0.2fr 0.2fr;
     grid-template-rows: 0.5fr 0.5fr;
-    grid-template-areas:
-        "icon_phone header__tel vk tg"
-        "call call call call";
-    justify-items: start;
-    align-content: center;
     font-size: 0.8rem;
 }
+
 .vk {
     grid-area: vk;
-    padding: 0vh 0.5vw;
+    padding: 0 0.5vw;
 }
-
-
 
 
 .tg {
     grid-area: tg;
-    padding: 0vh 0.5vw;
+    padding: 0 0.5vw;
 }
-
-
 
 
 .call {
-    grid-area: call;
-    padding: 0vh 1vw;
     color: #EA5D4A;
     font-size: 0.8rem;
+    grid-area: call;
+    padding: 0 1vw;
 }
-
-
 
 
 .button-header {
-    max-width: 12vw;
+    background-color: #8081bd;
+    border-radius: 1.3vw;
+    border-style: none;
+    color: #ffffff;
     display: flex;
     flex-wrap: nowrap;
-    grid-area: button-header;
-    background-color: #8081bd;
-    padding: 0.5vw 0.7vw;
-    border-radius: 1.3vw;
-    color: #ffffff;
-    border-style: none;
     font-size: 0.8rem;
+    grid-area: button-header;
     justify-content: center;
     margin: 0.2vw;
+    max-width: 12vw;
+    padding: 0.5vw 0.7vw;
 }
 
 
 
 
-#burger, [for=burger]{
+.burger, [for=burger]{
     display: none;
 }
-
-
-
-
-
 
 /* МЕДИАЗАПРОСЫ */
 /* ================================================================= */
 
 @media (min-width: 991px) and (max-width: 1199px){
     .header-container{
-        min-height: 3vh;
+        align-content: center;
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-rows: auto 1fr;
         grid-template-areas:
         "header-address header-address"
         "header-panel header-panel";
-        align-content: center;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto 1fr;
         margin-bottom: 1vh;
-        max-width: 1900px;
         margin: auto;
+        max-width: 1900px;
+        min-height: 3vh;
+
     }
     .header-address {
-        grid-area: header-address;
-        display: flex;
-        justify-content: center;
-        color: #EA5D4A;
-        font-size: 0.6rem;
-        padding: vh 2vw;
         align-items: center;
+        color: #EA5D4A;
+        display: flex;
+        font-size: 0.6rem;
+        grid-area: header-address;
+        justify-content: center;
+        padding: 0 2vw;
     }
 
     .header-address__metrostation {
-        grid-area: header-address__metrostation;
         color: cornflowerblue;
+        grid-area: header-address__metrostation;
     }
 
     .header-panel {
-        grid-area: header-panel;
+        align-items: center;
         display: grid;
+        grid-area: header-panel;
         grid-template-areas:
         "logo-nav navbar button-header";
         justify-content: space-around;
-        align-items: center;
     }
    
     .header__contacts {
@@ -169,99 +165,99 @@
 
     .logo-nav {
         grid-area: logo-nav;
+        margin: 0 auto;
         width: 10vw;
-        margin: 0vw auto;
+
     }
    
     .navbar-link{
-        padding: 0vh 1.2vw;
-        font-size: 0.7rem;
-        text-decoration: none;
         color: #334155;
+        font-size: 0.7rem;
+        padding: 0 1.2vw;
+        text-decoration: none;
     }
     .icon_phone {
       grid-area: icon_phone;
-      padding: 0vh 1vw;
+      padding: 0 1vw;
     }
     .header__tel{
-        padding: 0vh 1vw 0vh 1vw;
+        padding: 0 1vw 0 1vw;
     }
    
     .vk {
         grid-area: vk;
-        padding: 0vh 0.5vw;
+        padding: 0 0.5vw;
     }
    
     .tg {
         grid-area: tg;
-        padding: 0vh 0.5vw;
+        padding: 0 0.5vw;
     }
    
     .call {
-        grid-area: call;
-        padding: 0vh 1vw;
         color: #EA5D4A;
         font-size: 0.7rem;
+        grid-area: call;
+        padding: 0 1vw;
     }
    
     .button-header {
-        max-width: 50vw;
-        display: flex;
-        grid-area: button-header;
         background-color: #8081bd;
-        padding: 0.5vw 1vw;
         border-radius: 1.3vw;
-        color: #ffffff;
         border-style: none;
+        color: #ffffff;
+        display: flex;
         font-size: 0.7rem;
+        grid-area: button-header;
+        max-width: 50vw;
+        padding: 0.5vw 1vw;
     }
    
-    #burger, [for=burger]{
+    .burger, [for=burger]{
         display: none;
     }
 }
-
-
 
 
 @media (min-width: 771px) and (max-width: 990px){
 
 
     .header-container{
-        min-height: 3vh;
+        align-content: center;
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-rows: auto 1fr;
         grid-template-areas:
         "header-address header-address"
         "header-panel header-panel";
-        align-content: center;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto 1fr;
         margin-bottom: 1vh;
-        max-width: 1900px;
         margin: auto;
+        max-width: 1900px;
+        min-height: 3vh;
+
     }
     .header-address {
-        grid-area: header-address;
-        display: flex;
-        justify-content: center;
+        align-items: center;
         color: #EA5D4A;
         font-size: 0.6rem;
+        display: flex;
+        grid-area: header-address;
+        justify-content: center;
         padding: vh 2vw;
-        align-items: center;
     }
 
     .header-address__metrostation {
-        grid-area: header-address__metrostation;
         color: cornflowerblue;
+        grid-area: header-address__metrostation;
     }
 
     .header-panel {
-        grid-area: header-panel;
+        align-items: center;
         display: grid;
+        grid-area: header-panel;
         grid-template-areas:
         "logo-nav navbar button-header";
         justify-content: space-around;
-        align-items: center;
     }
    
     .header__contacts {
@@ -270,63 +266,61 @@
 
     .logo-nav {
         grid-area: logo-nav;
-        width: 10vw;
         margin: 0vw auto;
+        width: 10vw;
+
     }
    
     .navbar-link{
-        padding: 0vh 1.2vw;
-        font-size: 0.7rem;
-        text-decoration: none;
         color: #334155;
+        font-size: 0.7rem;
+        padding: 0 1.2vw;
+        text-decoration: none;
     }
     .icon_phone {
       grid-area: icon_phone;
-      padding: 0vh 1vw;
+      padding: 0 1vw;
     }
     .header__tel{
-        padding: 0vh 1vw 0vh 1vw;
+        padding: 0 1vw 0 1vw;
     }
    
     .vk {
         grid-area: vk;
-        padding: 0vh 0.5vw;
+        padding: 0 0.5vw;
     }
    
     .tg {
         grid-area: tg;
-        padding: 0vh 0.5vw;
+        padding: 0 0.5vw;
     }
    
     .call {
-        grid-area: call;
-        padding: 0vh 1vw;
         color: #EA5D4A;
         font-size: 0.7rem;
+        grid-area: call;
+        padding: 0 1vw;
     }
    
     .button-header {
-        max-width: 50vw;
-        display: flex;
-        grid-area: button-header;
         background-color: #8081bd;
-        padding: 0.5vw 1vw;
         border-radius: 1.3vw;
-        color: #ffffff;
         border-style: none;
+        color: #ffffff;
+        display: flex;
         font-size: 0.6rem;
+        grid-area: button-header;
+        max-width: 50vw;
+        padding: 0.5vw 1vw;
     }
    
-    #burger, [for=burger]{
+    .burger, [for=burger]{
         display: none;
     }
 }
 
 
-
-
     @media screen and (max-width: 770px){
-
 
     .header-address,
     .header-address__metrostation,
@@ -337,41 +331,40 @@
     }
    
     .header-container{
-        display: grid;
         align-content: center;
+        display: grid;
         max-width: 100%;
         padding: 0;
         
     }
    
     .header-panel {
+        align-items: center;
         display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 0.5fr 0.5fr;
-        grid-template-rows: 1fr 1fr;
         grid-template-areas:
         "logo-nav header__contacts burger"
         "button-header button-header button-header";
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr;
         justify-items: stretch;
         position: relative;
         top: 0;
         right: 0;
-        align-items: center;
+        width: 100%;
+
     }
    
     .logo-nav {
-        margin-left: 0;
         grid-area: logo-nav;
+        margin-left: 0;
         width: 35vw;
     }
    
     .header__contacts{
         grid-area: header__contacts;
-        padding: 0vw 0.3vw;
+        padding: 0 0.3vw;
        
     }
-
-
 
 
     .vk {
@@ -386,21 +379,18 @@
     }
    
     [for=burger]{
+        color: #e21811;
         cursor: pointer;
         display: block;
+        font-size: 2.5em;
+        justify-items: center;
+        margin-top: 1.5vw;
+        padding: 0 1vw;
         position: absolute;
         right: 0;
         top: 0;
         text-align: center;
-        color: #e21811;
-        font-size: 2.5em;
-        margin-top: 1.5vw;
-        justify-items: center;
-        padding: 0vw 1vw;
     }
-
-
-
 
     [for=burger]::before{
 content: "ⓧ";
@@ -408,61 +398,54 @@ content: "ⓧ";
    
     .navbar {
     /* display: none; */
-position: fixed;
-top: 0;
-margin-top: 70px;
-background:#8081bdce;
-border-radius: 12px;
-width: 75%;
-display: flex;
-justify-content: center;
-flex-direction: column;
-z-index: 10;
-user-select: none;
+    background:#8081bdce;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    position: fixed;
+    top: 0;
+    user-select: none;
+    width: 75%;
+    z-index: 10;
     }
 
 
-
-
     .navbar-link {
+    color: #ffffff;
     font-size: 0.8rem;
     font-weight: 600;
     line-height: 1rem;
-    text-decoration: none;  
-    color: #ffffff;
     text-align: center;
+    text-decoration: none;  
     padding: 15px;
     }
 
 
-
-
-    #burger:checked + label + nav{
+    .burger:checked + label + nav{
     display: none;
     }
 
 
-
-
-    #burger:checked + [for=burger]::before{
+    .burger:checked + [for=burger]::before{
         content: "☰";
     }
 
 
-
-
     .button-header {
-        max-width: 100%;
-        display: flex;
-        justify-items: stretch;
-        grid-area: button-header;
-        background-color: #EA5D4A;
-        padding: 2vw 0vw;
-        border-radius: 5vw;
         color: #ffffff;
+        background-color: #EA5D4A;
+        border-radius: 5vw;
         border-style: none;
+        display: flex;
         font-size: 0.8rem;
+        grid-area: button-header;
+        justify-items: stretch;
+        padding: 2vw 0vw;
         margin: 1vw 0;
+        max-width: 100%;
+
     }
 
 }
