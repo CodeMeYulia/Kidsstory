@@ -3,6 +3,13 @@
     display: flex;
 }
 
+.aside-time-bacground-img {
+    display: block;
+    position: absolute;
+    top: 43.75em;
+    left: 0em;
+}
+
 .aside-wrapper__container {
     width: 70vw;
     margin-top: 6.375em;
@@ -28,28 +35,38 @@
     margin-left: 20px;
 }
 
+.aside-time__img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+/*Динамические эффекты*/
+.aside-time__item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+/* ------МЕДИА ЗАПРОСЫ-----*/
 @media screen and (max-width: 960px) {
     .aside-wrapper__container {
         width: 90vw;
     }
 
     .aside-time {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 0.813em;
         column-gap: 1.25em;
     }
 
     .aside-time__item {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .aside-time__text {
-        font-family: 'Montserrat';
-        color: #334155;
-        font-size: 0.625em;
+        font-size: 1em;
         text-align: center;
         margin-left: 0;
     }
@@ -58,8 +75,11 @@
         display: block;
         width: 57px;
     }
-}
 
+    .aside-time-bacground-img {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 961px) and (max-width: 1024px){
     .aside-wrapper__container {
@@ -67,22 +87,17 @@
     }
 
     .aside-time {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 1.25em;
         column-gap: 1.25em;
     }
 
     .aside-time__item {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .aside-time__text {
-        font-family: 'Montserrat';
-        color: #334155;
-        font-size: 0.875em;
         text-align: center;
         margin-left: 0;
     }
@@ -91,11 +106,14 @@
         display: block;
         width: 76px;
     }
+
+    .aside-time-bacground-img {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1919px) {
     .aside-time {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 1.563em;
         column-gap: 1.25em;
