@@ -1,0 +1,45 @@
+.oops-container{
+    background-color:#FDDC4E;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 10vw;
+    min-height: 500px;
+}
+
+.title{
+    color: #EA5D4A;
+    font-size: 10rem;
+    margin-top: 5vw;
+    text-align: center;
+}
+
+.in_progress{
+    color: #EA5D4A;
+    font-size: 5rem;
+    margin-bottom: 10vw;
+    text-align: center;
+}
+
+
+@media (max-width: 770px) {
+    /* стили для xs-устройств */
+
+    .container__banner-top{
+        align-items: center;
+        width: 100%;
+    }
+
+    .title{
+        margin-top: 10vw;
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    .in_progress{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 10vw;
+    }
+}
