@@ -80,3 +80,250 @@ color: #334155;
     position: relative;
     top: 1px;
 }
+@media (min-width: 991px) and (max-width: 1199px){
+    .name{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 1.5em;
+        font-size: 2.8em;
+        /* line-height: 49px; */
+        color: #8081BD;
+        }
+        .paragraph{
+        margin-bottom: 2.5em;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2em;
+        /* line-height: 24px; */
+        color: #334155;
+        }
+        .video_card{
+            position: absolute;
+            left: 370px;
+            min-width: 600px;
+            border-radius: 35px;
+            margin-top: -25px;
+          }
+        .section-videogalery__blok{
+            display: flex;
+            justify-content: space-between;
+            }
+        
+        /* пагинация кнопок */
+        .pagination {
+            width:100%;
+            text-align:center;
+            padding: 10px;
+            margin-top:50px;
+            margin-bottom: 0px;
+           
+        }
+        .pagination ul{
+            width:100%;
+            padding:0px;
+            margin-top:20px;
+        }
+        .pagination ul li {
+            display:inline-block;
+            list-style:none;
+            margin:5px 5px;
+            font-size:4px;
+            text-align:center;
+        }
+        .pagination ul li a, .pagination ul li a:visited {
+            display:block;
+            text-decoration:none;
+            color: yellow;
+            background: url(bgnav.png) repeat-x scroll 0 0 yellow;
+            
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            /* -webkit-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            -moz-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            -ms-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd; */
+            height: 18px;
+            width: 18px;
+            line-height: 26px;
+            top: -1px;
+            text-shadow: 1px 1px #fff;
+        }
+        .pagination ul li a:hover {
+            display:block;
+            background: url(bgnav.png) repeat-x scroll 0 -24px red;
+            text-decoration:none;
+        }
+        .pagination ul li a:active {
+            box-shadow: none;
+            position: relative;
+            top: 1px;
+        }
+}
+@media (min-width: 771px) and (max-width: 990px){
+    .name{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 1.5em;
+        font-size: 2.8em;
+        /* line-height: 49px; */
+        color: #8081BD;
+        }
+        .paragraph{
+        margin-bottom: 2.5em;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2em;
+        /* line-height: 24px; */
+        color: #334155;
+        }
+        .video_card{
+            position: absolute;
+            left: 370px;
+            min-width: 600px;
+            border-radius: 35px;
+            margin-top: -25px;
+            width: auto;
+          }
+        .section-videogalery__blok{
+            display: flex;
+            justify-content: space-between;
+            }
+        
+        /* пагинация кнопок */
+        .pagination {
+            width:100%;
+            text-align:center;
+            padding: 10px;
+            margin-top:50px;
+            margin-bottom: 0px;
+           
+        }
+        .pagination ul{
+            width:100%;
+            padding:0px;
+            margin-top:20px;
+        }
+        .pagination ul li {
+            display:inline-block;
+            list-style:none;
+            margin:5px 5px;
+            font-size:4px;
+            text-align:center;
+        }
+        .pagination ul li a, .pagination ul li a:visited {
+            display:block;
+            text-decoration:none;
+            color: yellow;
+            background: url(bgnav.png) repeat-x scroll 0 0 yellow;
+            
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            /* -webkit-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            -moz-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            -ms-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd; */
+            height: 18px;
+            width: 18px;
+            line-height: 26px;
+            top: -1px;
+            text-shadow: 1px 1px #fff;
+        }
+        .pagination ul li a:hover {
+            display:block;
+            background: url(bgnav.png) repeat-x scroll 0 -24px red;
+            text-decoration:none;
+        }
+        .pagination ul li a:active {
+            box-shadow: none;
+            position: relative;
+            top: 1px;
+        }
+}
+
+@media screen and (max-width: 770px){
+    .name{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 1.5em;
+        font-size: 2.8em;
+        /* line-height: 49px; */
+        color: #8081BD;
+        }
+        .paragraph{
+        margin-bottom: 2.5em;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2em;
+        /* line-height: 24px; */
+        color: #334155;
+        }
+        .image_1{
+            width: auto;
+        }
+        .image_2{
+            width: auto;
+        }
+        
+        /* пагинация кнопок */
+        .pagination {
+            width:100%;
+            text-align:center;
+            padding: 10px;
+            margin-top:50px;
+            margin-bottom: 0px;
+           
+        }
+        .pagination ul{
+            width:100%;
+            padding:0px;
+            margin-top:20px;
+        }
+        .pagination ul li {
+            display:inline-block;
+            list-style:none;
+            margin:5px 5px;
+            font-size:4px;
+            text-align:center;
+        }
+        .pagination ul li a, .pagination ul li a:visited {
+            display:block;
+            text-decoration:none;
+            color: yellow;
+            background: url(bgnav.png) repeat-x scroll 0 0 yellow;
+            
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            /* -webkit-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            -moz-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            -ms-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+            box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd; */
+            height: 18px;
+            width: 18px;
+            line-height: 26px;
+            top: -1px;
+            text-shadow: 1px 1px #fff;
+        }
+        .pagination ul li a:hover {
+            display:block;
+            background: url(bgnav.png) repeat-x scroll 0 -24px red;
+            text-decoration:none;
+        }
+        .pagination ul li a:active {
+            box-shadow: none;
+            position: relative;
+            top: 1px;
+        }
+}
+

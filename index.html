@@ -14,14 +14,13 @@
     <link rel="stylesheet" href="assets/styles/section-advantages.css" type="text/css" />
     <link rel="stylesheet" href="assets/styles/videogalery.css" type="text/css" />
     <link rel="stylesheet" href="assets/styles/article.css" type="text/css" />
-    <link rel="stylesheet" href="assets/styles/aside-services.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/styles/aside-services.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="icon" href="../project_1/assets/images/kids_icon.png" type="image/png">
     <title>Kidsstory</title>
 </head>
 
@@ -39,18 +38,20 @@
                 <input type="checkbox" id="burger" class="burger" />
                 <label for="burger"></label>
                 <nav class="navbar" role="navigation">
-                    <a href="#" class="navbar-link">О нас</a>
-                    <a href="#" class="navbar-link">Расписание</a>
-                    <a href="#" class="navbar-link">Программа</a>
-                    <a href="#" class="navbar-link">Фото и видео</a>
-                    <a href="#" class="navbar-link">Команда</a>
-                    <a href="#" class="navbar-link">Контакты</a>
+                    <a href="#article-about" class="navbar-link">О нас</a>
+                    <a href="#aside-time" class="navbar-link">Расписание</a>
+                    <a href="#aside-services" class="navbar-link">Программа</a>
+                    <a href="#section-videogalery" class="navbar-link">Фото и видео</a>
+                    <a href="team.html" class="navbar-link">Команда</a>
+                    <a href="contacts.html" class="navbar-link">Контакты</a>
                 </nav>
                 <div class="header__contacts">
                     <img class="icon_phone" src="./assets/images/icon_phone.png" alt="icon_phone" />
                     <span class="header__tel">+7 495 123 34 25</span>
-                    <img class="vk" src="./assets/images/Header_vk.png" alt="vk" />
-                    <img class="tg" src="./assets/images//Header_tg.png" alt="tg" />
+                    <a href="https://vk.com/"><img class="vk" src="./assets/images/Header_vk.png" alt="vk" /></a>
+                    <a href="https://web.telegram.org/"><img class="tg" src="./assets/images//Header_tg.png"
+                            alt="tg" /></a>
+
                     <div class="call">Заказать обратный звонок</div>
                 </div>
                 <button class="button-header">Записаться на экскурсию</button>
@@ -106,47 +107,35 @@
 
             <!-- Nadezhda блок ИКОНКИ (ЧАСЫ РАБОТЫ - ПИТАНИЕ) начало -->
             <div class="aside-wrapper">
-                <img 
-                            src="assets/images/aside-time_img/aside-backgroung-img.svg" 
-                            alt="фоновое изображение"
-                            class="aside-time-bacground-img"
-                        />
+                <img src="assets/images/aside-time_img/aside-backgroung-img.svg" alt="фоновое изображение"
+                    class="aside-time-bacground-img" />
                 <div class="aside-wrapper__container">
-                    
-                    <aside class="aside-time">
-                        
+
+                    <aside class="aside-time" id="aside-time">
+
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__time_min.svg 57w, ./assets/images/aside-time_img/aside-time__time.svg 76w" 
-                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px" 
-                                src="./assets/images/aside-time_img/aside-time__time.svg"
-                                alt="Часы работы" 
-                                class="aside-time__img" 
-                            />
+                            <img srcset="./assets/images/aside-time_img/aside-time__time_min.svg 57w, ./assets/images/aside-time_img/aside-time__time.svg 76w"
+                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
+                                src="./assets/images/aside-time_img/aside-time__time.svg" alt="Часы работы"
+                                class="aside-time__img" />
                             <p class="aside-time__text">
                                 <b>Часы работы:</b> с 7:00 до 19:00
                             </p>
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__group_min.svg 57w, ./assets/images/aside-time_img/aside-time__group.svg 76w" 
-                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px" 
-                                src="./assets/images/aside-time_img/aside-time__group.svg"
-                                alt="Группы" 
-                                class="aside-time__img" 
-                            />
+                            <img srcset="./assets/images/aside-time_img/aside-time__group_min.svg 57w, ./assets/images/aside-time_img/aside-time__group.svg 76w"
+                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
+                                src="./assets/images/aside-time_img/aside-time__group.svg" alt="Группы"
+                                class="aside-time__img" />
                             <p class="aside-time__text"><b>Группы:</b> до 15 человек</p>
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__place_min.svg 57w, ./assets/images/aside-time_img/aside-time__place.svg 76w" 
+                            <img srcset="./assets/images/aside-time_img/aside-time__place_min.svg 57w, ./assets/images/aside-time_img/aside-time__place.svg 76w"
                                 sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
-                                src="./assets/images/aside-time_img/aside-time__place.svg"
-                                alt="Площадь для прогулок" 
-                                class="aside-time__img" 
-                            />
+                                src="./assets/images/aside-time_img/aside-time__place.svg" alt="Площадь для прогулок"
+                                class="aside-time__img" />
                             <p class="aside-time__text">
                                 <b>Площадь для прогулок:</b> собственная оборудованная
                                 территория для прогулок
@@ -154,74 +143,56 @@
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__video_min.svg 57w, ./assets/images/aside-time_img/aside-time__video.svg   76w" 
-                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px" 
-                                src="./assets/images/aside-time_img/aside-time__video.svg"
-                                alt="Видеонаблюдение" 
-                                class="aside-time__img" 
-                            />
+                            <img srcset="./assets/images/aside-time_img/aside-time__video_min.svg 57w, ./assets/images/aside-time_img/aside-time__video.svg   76w"
+                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
+                                src="./assets/images/aside-time_img/aside-time__video.svg" alt="Видеонаблюдение"
+                                class="aside-time__img" />
                             <p class="aside-time__text"><b>Видеонаблюдение:</b> онлайн</p>
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__english_min.svg 57w, ./assets/images/aside-time_img/aside-time__english.svg 76w" 
-                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px" 
-                                src="./assets/images/aside-time_img/aside-time__english.svg"
-                                alt="Англоязычная среда" 
-                                class="aside-time__img" 
-                            />
+                            <img srcset="./assets/images/aside-time_img/aside-time__english_min.svg 57w, ./assets/images/aside-time_img/aside-time__english.svg 76w"
+                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
+                                src="./assets/images/aside-time_img/aside-time__english.svg" alt="Англоязычная среда"
+                                class="aside-time__img" />
                             <p class="aside-time__text">
                                 <b>Англоязычная среда:</b> билингвал / экспат
                             </p>
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__age_min.svg 57w, ./assets/images/aside-time_img/aside-time__age.svg 76w" 
-                                sizes="(max-width: 760px) 57px,(min-width: 761px) 76px" 
-                                src="./assets/images/aside-time_img/aside-time__age.svg"
-                                alt="Возраст детей" 
-                                class="aside-time__img" 
-                            />
+                            <img srcset="./assets/images/aside-time_img/aside-time__age_min.svg 57w, ./assets/images/aside-time_img/aside-time__age.svg 76w"
+                                sizes="(max-width: 760px) 57px,(min-width: 761px) 76px"
+                                src="./assets/images/aside-time_img/aside-time__age.svg" alt="Возраст детей"
+                                class="aside-time__img" />
                             <p class="aside-time__text">
                                 <b>Возраст детей:</b> с 1,5 до 7 лет
                             </p>
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__medicine_min.svg 57w, ./assets/images/aside-time_img/aside-time__medicine.svg 76w" 
-                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px" 
+                            <img srcset="./assets/images/aside-time_img/aside-time__medicine_min.svg 57w, ./assets/images/aside-time_img/aside-time__medicine.svg 76w"
+                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
                                 src="./assets/images/aside-time_img/aside-time__medicine.svg"
-                                alt="Утренний фильтр медработником" 
-                                class="aside-time__img" 
-                            />
+                                alt="Утренний фильтр медработником" class="aside-time__img" />
                             <p class="aside-time__text">
                                 <b>Утренний фильтр медработником:</b> ежедневно
                             </p>
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__space_min.svg 57w, ./assets/images/aside-time_img/aside-time__space.svg 76w" 
-                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px" 
-                                src="./assets/images/aside-time_img/aside-time__space.svg"
-                                alt="Помещение" 
-                                class="aside-time__img" 
-                            />
+                            <img srcset="./assets/images/aside-time_img/aside-time__space_min.svg 57w, ./assets/images/aside-time_img/aside-time__space.svg 76w"
+                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
+                                src="./assets/images/aside-time_img/aside-time__space.svg" alt="Помещение"
+                                class="aside-time__img" />
                             <p class="aside-time__text"><b>Помещение:</b> 800 кв.м</p>
                         </div>
 
                         <div class="aside-time__item">
-                            <img 
-                                srcset="./assets/images/aside-time_img/aside-time__food_min.svg 57w, ./assets/images/aside-time_img/aside-time__food.svg 76w" 
-                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px" 
-                                src="./assets/images/aside-time_img/aside-time__food.svg"
-                                alt="Питание" 
-                                class="aside-time__img" 
-                            />
+                            <img srcset="./assets/images/aside-time_img/aside-time__food_min.svg 57w, ./assets/images/aside-time_img/aside-time__food.svg 76w"
+                                sizes="(max-width: 760px) 57px, (min-width: 761px) 76px"
+                                src="./assets/images/aside-time_img/aside-time__food.svg" alt="Питание"
+                                class="aside-time__img" />
                             <p class="aside-time__text">
                                 <b>Питание:</b> 5-разовое, с учетом индивидуальных
                                 особенностей ребенка
@@ -263,143 +234,109 @@
             <!-- Nadezhda блок ДОПУСЛУГИ начало -->
             <div class="aside-services-wrapper">
                 <div class="aside-services-wrapper__container">
-                    
-                    <aside class="aside-services">
+
+                    <aside class="aside-services" id="aside-services">
                         <p class="aside-services-text_heading">Дополнительные услуги</p>
                         <div class="aside-services__first-row">
                             <div class="aside-services__item yoga">
-                                <img
-                                    src="assets/images/aside-services_img/aside-services__yoga.svg" 
-                                    alt="Йога"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__yoga.svg" alt="Йога"
+                                    class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Йога</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item montessori">
-                                <img
-                                    src="./assets/images/aside-services_img/aside-services__montessori.svg" 
-                                    alt="Монтессори"
-                                    class="aside-services__img"
-                                />
+                                <img src="./assets/images/aside-services_img/aside-services__montessori.svg"
+                                    alt="Монтессори" class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Монтессори группа с уникальным древесинным оборудованием</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item golf">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__golf.svg" 
-                                    alt="Гольф"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__golf.svg" alt="Гольф"
+                                    class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Гольф для малышей</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item bike">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__bike.svg" 
-                                    alt="Занятия с беговелами"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__bike.svg"
+                                    alt="Занятия с беговелами" class="aside-services__img" />
                                 <p class="aside-services-text_item"><b>Занятия с беговелами</b></p>
                             </div>
                         </div>
-        
+
                         <div class="aside-services__second-row">
                             <div class="aside-services__item construction">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__construction.svg" 
-                                    alt="Конструирование"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__construction.svg"
+                                    alt="Конструирование" class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Легостроение и конструирование</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item plastic">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__plastic.svg" 
-                                    alt="Глинопластика"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__plastic.svg"
+                                    alt="Глинопластика" class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Тестопластика и глинопластика</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item rhetoric">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__rhetoric.svg" 
-                                    alt="Риторика"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__rhetoric.svg" alt="Риторика"
+                                    class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Риторика и ораторское мастерство</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item climbing">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__climbing.svg" 
-                                    alt="Cкалолазание"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__climbing.svg"
+                                    alt="Cкалолазание" class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Занятия по скалолазанию</b>
                                 </p>
                             </div>
                         </div>
-        
+
                         <div class="aside-services__third-row">
                             <div class="aside-services__item theatre">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__theatre.svg" 
-                                    alt="Театрализация"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__theatre.svg"
+                                    alt="Театрализация" class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Театрализация на английском языке</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item cooking">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__cooking.svg" 
-                                    alt="Кулинария"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__cooking.svg" alt="Кулинария"
+                                    class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Кулинария и этикет сервисного стола</b>
                                 </p>
                             </div>
-        
+
                             <div class="aside-services__item sand">
-                                <img 
-                                    src="assets/images/aside-services_img/aside-services__sand.svg" 
-                                    alt="Песочная терапия"
-                                    class="aside-services__img"
-                                />
+                                <img src="assets/images/aside-services_img/aside-services__sand.svg"
+                                    alt="Песочная терапия" class="aside-services__img" />
                                 <p class="aside-services-text_item">
                                     <b>Песочная терапия. Работа на интерактивных столах и досках</b>
                                 </p>
                             </div>
                         </div>
-        
-                        
+
+
                     </aside>
                 </div>
             </div>
             <!-- Nadezhda блок ДОПУСЛУГИ конец -->
 
             <!-- Aigul блок ВИДЕОГАЛЕРЕЯ начало -->
-            <section class="section-videogalery">
-              
+            <section class="section-videogalery" id="section-videogalery">
                 <h2 class="section-videogalery name">Видеогалерея нашего сада</h2>
                 <p class="section-videogalery paragraph">
                     Вы можете ознакомиться как проходят наши будни
@@ -461,7 +398,7 @@
                     </div>
 
                     <div class="section-advantages__item">
-                        <div class="section-advantages__box blue">
+                    z    <div class="section-advantages__box blue">
                             <img src="/assets/images/section-advantages__experience.svg" alt=""
                                 class="section-advantages__img" />
                         </div>
@@ -488,7 +425,7 @@
 
             <!-- Aigul блок ПРЕИМУЩЕСТВА конец -->
             <!-- AYGUL блок с текстом article -->
-            <article class="article-about">
+            <article class="article-about" id="article-about">
                 <h2 class="article-about name">О нашем центре</h2>
 
                 <p class="article-about paragraph">
@@ -518,7 +455,9 @@
             </article>
         </main>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+
+        </footer>
     </div>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
