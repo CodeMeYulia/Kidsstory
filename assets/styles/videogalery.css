@@ -1,4 +1,31 @@
 /* Айгуль видеогалерея и пагинация кнопок */
+
+.section-videogalery-wrapper {
+    display: none;
+}
+
+/*
+.section-videogalery-wrapper {
+    justify-content: center;
+    display: flex;
+}
+
+.section-videogalery__container {
+    width: 70vw;
+    margin-top: 2.375em;
+    margin-bottom: 7.25em;
+}
+
+.section-videogalery {
+    display: grid;
+    grid-column: 100%;
+}
+
+.section-videogalery__blok {
+    width: 100%;
+}
+
+
 .name{
 font-family: 'Montserrat';
 font-style: normal;
@@ -17,19 +44,19 @@ font-size: 1.2em;
 /* line-height: 24px; */
 color: #334155;
 }
-.video_card{
+/*.video_card{
     position: absolute;
     left: 370px;
     min-width: 600px;
     border-radius: 35px;
     margin-top: -25px;
-  }
+  }*/
 .section-videogalery__blok{
     display: flex;
     justify-content: space-between;
     }
 
-/* пагинация кнопок */
+/*/* пагинация кнопок */
 .pagination {
     width:100%;
     text-align:center;
@@ -327,3 +354,4 @@ color: #334155;
         }
 }
 
+*/
