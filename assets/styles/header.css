@@ -1,7 +1,6 @@
 .header-container{
     align-content: center;
     display: grid;
-    grid-template-areas: auto 1fr / 0.5fr 1.5fr auto 1fr;
     margin: auto;
     margin-bottom: 1vh;
     max-width: 1900px;
@@ -53,6 +52,10 @@
 
 }
 
+a:active{
+   color: #8081bd;
+} 
+
 a:hover {
     color: #EA5D4A; /* Цвет ссылки при наведении на нее курсора мыши */  
     text-decoration: underline; /* Добавляем подчеркивание */
@@ -70,7 +73,6 @@ a:hover {
 
 .header__contacts {
     align-content: center;
-    display: grid;
     grid-area: header__contacts;
     grid-template-areas:
     "icon_phone header__tel vk tg"
@@ -191,12 +193,12 @@ a:hover {
    
     .vk {
         grid-area: vk;
-        padding: 0 0.5vw;
+        padding: 0 10px;
     }
    
     .tg {
         grid-area: tg;
-        padding: 0 0.5vw;
+        padding: 0 10px;
     }
    
     .call {
@@ -284,7 +286,7 @@ a:hover {
     }
     .icon_phone {
       grid-area: icon_phone;
-      padding: 0 1vw;
+      padding: 0 10px;
     }
     .header__tel{
         padding: 0 1vw 0 1vw;
@@ -292,12 +294,12 @@ a:hover {
    
     .vk {
         grid-area: vk;
-        padding: 0 0.5vw;
+        padding: 0 10px;
     }
    
     .tg {
         grid-area: tg;
-        padding: 0 0.5vw;
+        padding: 0 10px;
     }
    
     .call {
