@@ -2,7 +2,7 @@
     align-content: center;
     display: grid;
     margin: auto;
-    margin-bottom: 1vh;
+    margin-bottom: 20px;
     max-width: 1900px;
     min-height: 5vh;
 }
@@ -15,7 +15,7 @@
     grid-auto-flow: column;
     justify-content: flex-end;
     min-height: 3vh;
-    padding: 0 2vw;
+    padding: 0 20px;
 }
 .header-address__metrostation {
   color: cornflowerblue;
@@ -39,14 +39,14 @@
     display: flex;
     grid-area: navbar;
     justify-content: center;
-    padding: 0 1vw 0 1vw;
+    padding: 0 10px 0 10px;
 
 
 }
 .navbar-link{
     color: #334155;
     font-size: 1rem;
-    padding: 0 0.4vw;
+    padding: 0 10px;
     text-decoration: none;
 
 
@@ -63,12 +63,11 @@ a:hover {
 
 .icon_phone {
   grid-area: icon_phone;
-  padding: 0 1vw;
+  padding: 0 10px;
 }
 
 .header__tel{
     font-weight: 600;
-    padding: 0 1vw 0 1vw;
 }
 
 .header__contacts {
@@ -77,28 +76,26 @@ a:hover {
     grid-template-areas:
     "icon_phone header__tel vk tg"
     "call call call call";
-    grid-template-columns: 1vw auto 0.2fr 0.2fr;
-    grid-template-rows: 0.5fr 0.5fr;
+    /* grid-template-columns: 1vw auto 0.2fr 0.2fr;
+    grid-template-rows: 0.5fr 0.5fr; */
     font-size: 0.8rem;
 }
 
 .vk {
     grid-area: vk;
-    padding: 0 0.5vw;
+    padding: 0 5px;
 }
-
 
 .tg {
     grid-area: tg;
-    padding: 0 0.5vw;
+    padding: 0 5px;
 }
-
 
 .call {
     color: #EA5D4A;
     font-size: 0.8rem;
     grid-area: call;
-    padding: 0 1vw;
+    padding: 0 10px;
 }
 
 
@@ -112,13 +109,10 @@ a:hover {
     font-size: 0.8rem;
     grid-area: button-header;
     justify-content: center;
-    margin: 0.2vw;
+    margin: 10px;
     max-width: 12vw;
-    padding: 0.5vw 0.7vw;
+    padding: 7px 10px;
 }
-
-
-
 
 .burger, [for=burger]{
     display: none;
@@ -136,7 +130,7 @@ a:hover {
         "header-panel header-panel";
         grid-template-columns: 1.5fr 1fr;
         grid-template-rows: auto 1fr;
-        margin-bottom: 1vh;
+        margin-bottom: 10px;
         margin: auto;
         max-width: 1900px;
         min-height: 3vh;
@@ -146,10 +140,10 @@ a:hover {
         align-items: center;
         color: #EA5D4A;
         display: flex;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         grid-area: header-address;
         justify-content: center;
-        padding: 0 2vw;
+        padding: 0 5px;
     }
 
     .header-address__metrostation {
@@ -180,15 +174,15 @@ a:hover {
     .navbar-link{
         color: #334155;
         font-size: 0.7rem;
-        padding: 0 1.2vw;
+        padding: 0 12px;
         text-decoration: none;
     }
     .icon_phone {
       grid-area: icon_phone;
-      padding: 0 1vw;
+      padding: 0 10px;
     }
     .header__tel{
-        padding: 0 1vw 0 1vw;
+        padding: 0 10px 0 10px;
     }
    
     .vk {
@@ -205,7 +199,7 @@ a:hover {
         color: #EA5D4A;
         font-size: 0.7rem;
         grid-area: call;
-        padding: 0 1vw;
+        padding: 0 10px;
     }
    
     .button-header {
@@ -217,7 +211,7 @@ a:hover {
         font-size: 0.7rem;
         grid-area: button-header;
         max-width: 50vw;
-        padding: 0.5vw 1vw;
+        padding: 7px 10px;
     }
    
     .burger, [for=burger]{
@@ -237,7 +231,7 @@ a:hover {
         "header-panel header-panel";
         grid-template-columns: 1.5fr 1fr;
         grid-template-rows: auto 1fr;
-        margin-bottom: 1vh;
+        margin-bottom: 10px;
         margin: auto;
         max-width: 1900px;
         min-height: 3vh;
@@ -250,7 +244,7 @@ a:hover {
         display: flex;
         grid-area: header-address;
         justify-content: center;
-        padding: vh 2vw;
+        padding: 0 10px;
     }
 
     .header-address__metrostation {
@@ -281,7 +275,7 @@ a:hover {
     .navbar-link{
         color: #334155;
         font-size: 0.7rem;
-        padding: 0 1.2vw;
+        padding: 0 12px;
         text-decoration: none;
     }
     .icon_phone {
@@ -289,7 +283,7 @@ a:hover {
       padding: 0 10px;
     }
     .header__tel{
-        padding: 0 1vw 0 1vw;
+        padding: 0 10px 0 10px;
     }
    
     .vk {
@@ -306,7 +300,7 @@ a:hover {
         color: #EA5D4A;
         font-size: 0.7rem;
         grid-area: call;
-        padding: 0 1vw;
+        padding: 0 10px
     }
    
     .button-header {
@@ -318,7 +312,7 @@ a:hover {
         font-size: 0.6rem;
         grid-area: button-header;
         max-width: 50vw;
-        padding: 0.5vw 1vw;
+        padding: 7px 10px;
     }
    
     .burger, [for=burger]{
@@ -369,14 +363,14 @@ a:hover {
    
     .header__contacts{
         grid-area: header__contacts;
-        padding: 0 0.3vw;
+        padding: 0 5px;
        
     }
 
 
     .vk {
         grid-area: vk;
-        margin-right: 2vw;
+        margin-right: 20px;
         width: 6vw;
     }
    
@@ -391,7 +385,7 @@ a:hover {
         display: block;
         font-size: 2.5em;
         justify-items: center;
-        margin-top: 1.5vw;
+        margin-top: 15px;
         padding: 0 1vw;
         position: absolute;
         right: 0;
@@ -449,7 +443,7 @@ content: "ⓧ";
         font-size: 0.8rem;
         grid-area: button-header;
         justify-items: stretch;
-        padding: 2vw 0vw;
+        padding: 15px 0vw;
         margin: 1vw 0;
         max-width: 100%;
 
