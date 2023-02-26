@@ -1,71 +1,95 @@
 .form-wrapper {
   justify-content: center;
   display: flex;
+  margin-bottom: 10px;
 }
 .form {
   background-color: #8081bd;
   color: #ffffff;
   border-radius: 20px;
-  height: 35vh;
-  max-width: 100%;
+  height: 220px;
+  width: 100%;
   margin-top: 5vh;
   margin-bottom: 5vh;
   display: grid;
-  grid-template-columns: 10vw 1fr 1fr 10vw;
-}
-.input-container {
-  grid-column: 2 / 3;
-  display: grid;
-  height: 35vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 23% 26% 13% 10% 5% 23%;
 }
-.image-container {
-  grid-column: 3 / 4;
-  display: flex;
-  justify-content: center;
+
+.input-container {
   align-items: center;
+  height: 220px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1.6fr;
+  grid-template-areas: 
+  "form-text1 form-text1"
+  "form-text2 form-text2"
+  "input-box input-box";
+  padding-left: 50px;
 }
+
 .form-text1 {
-  grid-area: 2 / 1 / 3 / 3;
-  margin: 0;
+  margin: 15px 5px 0 30px;
   font-size: 1.4rem;
   font-weight: 600;
+  grid-area: form-text1;
   line-height: 1.5rem;
 }
+
 .form-text2 {
-  grid-area: 3 / 1 / 4 / 3;
-  margin: 0;
+  font-size: 0.8rem;
+  grid-area: form-text2;
+  margin: 10px 10px 0 30px;
 }
 .input-box {
-  grid-area: 4 / 1 / 5 / 2;
+  display: grid;
+  grid-area: input-box;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "input-data form__button"
+  "form-accept form-accept";
+  margin: 0 10px 0 30px;
 }
-.accept {
-  grid-area: 5 / 1 / 6 / 2;
-  font-size: 0.8rem;
-}
-.form__button {
-  grid-area: 4 / 2 / 5 / 3;
-}
+
 .input-data {
   display: flex;
   border-style: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 1vw;
-  width: 15vw;
-  margin: 0.5vh;
+  padding: 7px 12px;
+  border-radius: 20px;
+  grid-area: input-data;
+  /* width: 15vw; */
+  margin: 10px;
   font-size: 0.8rem;
 }
-.form__button .input-data {
+.form__button {
+  display: flex;
+  border-style: none;
+  border-radius: 20px;
+  grid-area: form__button;
   background-color: #f6b31f;
   color: #ffffff;
   text-align: center;
+  margin: 10px;
+  justify-content: center;
+}
+.form-accept {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  grid-column: 1/4;
 }
 .form__image1 {
   display: flex;
-  width: 35vw;
-  position: relative;
+  max-width: 50%;
+ 
 }
+.image-container {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 70px;
+ }
 /* ========МЕДИАЗАПРОСЫ============== */
 /*
 @media screen and (max-width: 960px) {

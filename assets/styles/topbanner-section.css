@@ -311,7 +311,7 @@
     .container__banner-top{
         align-items: center;
         background-color: rgb(255, 255, 255);
-        border-radius: 2vh;
+        border-radius: 20px;
         display: grid;
         grid-template-areas: 
         "banner-block" 
@@ -328,7 +328,7 @@
         background-position: 25% 100%, 70% 0%, 180% 25%, -2%;
         background-repeat: no-repeat;
         background-size: 30%, 50%, 59%, 30%;
-        border-radius: 2vh;
+        border-radius: 20px;
         display: grid;
         grid-area: banner-block;
         grid-template-columns: 1fr;
