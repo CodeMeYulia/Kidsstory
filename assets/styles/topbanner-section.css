@@ -1,6 +1,6 @@
 .container__banner-top{
     background-color: #FDDC4E;
-    border-radius: 2vh;
+    border-radius: 20px;
     display: grid;
     grid-template-areas: "banner-block book-form__banner-top";
     grid-template-columns: 1fr 25%;
@@ -27,7 +27,7 @@
     align-content: center;
     display: grid;
     max-width: 100%;
-    padding-left: 3vw;
+    padding-left: 30px;
 }
 
 
@@ -60,14 +60,14 @@
 
 .book-form__banner-top{
     background-color: #8081bd;
-    border-radius: 0 1vh 1vh 0;
+    border-radius: 0 10px 10px 0;
     grid-area: book-form__banner-top;
     height: 500px;
 }
 
 .form-container{
     display: grid;
-    margin: 1vw 2vw;
+    margin: 10px 20px;
 }
 
 .h2-form{
@@ -75,22 +75,22 @@
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.5rem;
-    margin: 1.5vw 0;
+    margin: 15px 10px;
 }
 
 .p-form{
     color: #ffffff;
     font-size: 0.8rem;
-    margin-bottom: 0.5vw;
+    margin: 15px 10px;
 }
 
 .input{
-    border-radius: 1vw;
+    border-radius: 10px;
     border-style: none;
     display: flex;
     font-size: 0.8rem;
-    margin: 0.5vh;
-    padding: 0.5rem 1.2rem;
+    margin: 15px;
+    padding: 7px 12px;
 }
 
 .input-yes{
@@ -125,7 +125,7 @@
         align-content: center;
         display: grid;
         max-width: 100%;
-        padding-left: 3vw;
+        padding-left: 30px;
     }
     
     
@@ -154,7 +154,7 @@
 
     .book-form__banner-top{
         background-color: #8081bd;
-        border-radius: 0 1vh 1vh 0;
+        border-radius: 0 10px 10px 0;
         grid-area: book-form__banner-top;
         height: 500px;
     }
@@ -165,7 +165,7 @@
 
     .form-container{
         display: grid;
-        margin: 3vw 2vw;
+        margin: 20px;
     }
     
     .h2-form{
@@ -173,13 +173,13 @@
         font-size: 1.2rem;
         font-weight: 600;
         line-height: 1.5rem;
-        margin: 1.5vw 0;
+        margin: 10px 10px;
     }
 
     .p-form{
         color: #ffffff;
         font-size: 0.6rem;
-        margin-bottom: 0.5vw;
+        /* margin-bottom: 5px; */
     }
 
     .input{
@@ -187,8 +187,8 @@
         border-style: none;
         display: flex;
         font-size: 0.8rem;
-        margin-top: 1.5vh;
-        padding: 0.5rem 0.7rem;
+        margin-top: 10px;
+        padding: 7px;
     }
 
     .input-yes{
@@ -228,7 +228,7 @@
         align-content: center;
         display: grid;
         max-width: 100%;
-        padding-left: 3vw;
+        padding-left: 20px;
     }
 
     .text__banner-top{
@@ -256,36 +256,36 @@
 
     .book-form__banner-top{
         background-color: #8081bd;
-        border-radius: 0 1vh 1vh 0;
+        border-radius: 0 10px 10px 0;
         grid-area: book-form__banner-top;
         height: 400px;
     }
     .form-container{
         display: grid;
-        margin: 2vw 1vw;
+        margin: 10px 20px;
     }
     
     .h2-form{
         color: #ffffff;
         font-size: 1rem;
         font-weight: 600;
-        line-height: 1.5rem;
-        margin: 1.5vw 0;
+        line-height: 1.2rem;
+        margin: 7px 10px 0 0;
     }
 
     .p-form{
         color: #ffffff;
         font-size: 0.6rem;
-        margin-bottom: 0.5vw;
+        margin-bottom: 7px;
     }
 
     .input{
-        border-radius: 1vw;
+        border-radius: 10px;
         border-style: none;
         display: flex;
         font-size: 0.6rem;
-        padding: 0.5rem 0.7rem;
-        margin-top: 0.5vh;
+        padding: 7px 10px;
+        margin-top: 5px;
     }
 
     .input-yes{
@@ -341,7 +341,7 @@
 
     .book-form__banner-top{
         background-color: #8081bd;
-        border-radius: 2vh;
+        border-radius: 20px;
         grid-area: book-form__banner-top;
         height: 350px;
         max-width: 100%;
@@ -391,7 +391,7 @@
     
     .form-container{
         display: grid;
-        margin: 2vw 3vw;
+        margin: 7px 15px;
     }
    
     .h2-form{
@@ -399,23 +399,23 @@
         font-size: 1.1rem;
         font-weight: 600;
         line-height: 1.1rem;
-        margin: 2vw auto;
-        padding-left: 2vw;
+        margin: 7px auto;
+        padding-left: 10px;
     }
     .p-form{
         color: #ffffff;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         line-height: 0.7rem;
-        margin: 1vw 0 1vw 0;
-        padding-left: 2vw;
+        margin: 7px auto;
+        padding-left: 10px;
     }
     .input{
-        border-radius: 7vw;
+        border-radius: 20px;
         border-style: none;
         display: flex;
         font-size: 0.7rem;
-        margin: 0.5vh;
-        padding: 0.4rem 1rem;
+        margin: 7px;
+        padding: 7px 10px;
     }
 
     .input-yes{
@@ -425,9 +425,10 @@
 
     .input-book{
         background-color: #EA5D4A;
-        border-radius: 5vw;
+        border-radius: 20px;
         color: #ffffff;
         justify-content: center;
-        padding: 5px 0;
+        padding: 5px 10px;
+margin-top: 0;
     }
 }
